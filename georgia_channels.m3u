@@ -65,36 +65,3 @@ https://fl1003.bozztv.com/ushba51/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="qartulisimgerebi" group-title="Georgia (🇬🇪)",Qartuli Simgerebi
 https://fl1003.bozztv.com/ushba57/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="tv25" group-title="Georgia (🇬🇪)",TV 25
-https://tgn.bozztv.com/gin-dvrfl05/gin-tv25/tracks-v1a1/mono.m3u8?nimblesessionid=1764531575&wmsAuthSign=c2VydmVyX3RpbWU9OC8xNi8yMDI2IDExOjM5OjA5IEFNJmhhc2hfdmFsdWU9ZGUwRUhBUkZ1QUU2TXlUZElvMTdBdz09JnZhbGlkbWludXRlcz0xNDQwJnN0cm1fbGVuPTIw
-
-#EXTINF:-1 tvg-id="sezonitv" group-title="Georgia (🇬🇪)",SezoniTV
-https://tbs01-edge11.itdc.ge/sezonitv/tracks-v1a1/index-1786852635-21600.m3u8?token=3BP6LIG7BKsD-4PukkkWq8jw2GnCKk3loRwoJNXpHt0F0B9dwPcGAtUPbsUAL6VWUAtuV-Wz-X0rym-G-tO6_2-4KZmASfwBtI51njN_SE7MtO0XXwrH_B1UOxgU0QdIaE8Z1nNqgilSGUPgft6kb4aMD0swGGAfVEpewHAL3vhjO93mVlhN30RdJtoeuWKFduqJYNIdBdMOvRZPnkWYjxy4wdjb6HeWWc8V5PEq73UQhsyTbmO4a77CXUDH355XVVZqr70nare10uCAA9mZdCVyeKKUPKETpkBK1l5lHp7zR7VlidvDLXxK-C7Ry688
-
-#EXTINF:-1 tvg-id="tvcomedy" group-title="Georgia (🇬🇪)",TVcomedy
-https://tbs01-edge11.itdc.ge/comedytv/tracks-v1a1/mono.m3u8?token=ajdhbFiQ1zGI348Xl9-UGidKdCuZGXWWRSaGHTFJfEFsTyggyu8sRxA9m2Ayk_RQjxeAKxoz_4i4Q5jorROnRGLiDN_9TI_sMDba0Lel5tyzoQscn9CxIgaGgNFwDLsMW8Je0qVN0nymDP3cP6L2B6yDJhw0HIALCYMR4Q3GMSJfm1uZSy6nGzqcDO99Q1st5GCS7UGG9Oab9fGYJl2NZrV5UK65oCrjk_hnCpCSGvtGb5CnTvFmXc6VvNOSCOQTEfHpJ97WX-mW5uY-ESOSDgV4NquNtMsdlzQi0t0uTxlur9WtFOq8dAVD1GN5Y3FL
-
-#EXTINF:-1 tvg-id="chveniarkhi" group-title="Georgia (🇬🇪)",Chveni Arxi
-https://tbs01-edge17.itdc.ge/chveniarkhi/tracks-v1a1/mono.m3u8?token=4xL3Olm5yNtB3FJ9-LZ5AGpsLlbQIpKJEoP26eVPk9eSi0psJK20QIyOKpMv1qXy3yvU7E7isx5p3AVRT_pD-vjs97Dtj-R6f9q-VMUOJORTkO8gAmDJiei_ljw9rF7X1E1FJiw-uDnEUsLhJV31ORih9Ep5P_YqKGOgmjHFP05gpD6iI8uyCIjOW_mqzfTiW_915RXt4zOMLSuK_dFVqcOxQoXvg6gbLoEnhWyzN7zApNFernLehqyDI_DGj8rOIg40Q9Xk8dtITw_PDwZ48B2V6aAmXsDFnnNq2LhlCmT9lN7TyrBG_97txTBf2tS7
-
-#EXTINF:-1 tvg-id="megatv" group-title="Georgia (🇬🇪)",MEGA TV
-https://tbs01-edge11.itdc.ge/megatv/tracks-v1a1/mono.m3u8?token=InWV4NPbc6bxnfqzokg-oFunZzCZnMZe8wYOC4jGc_MLzMyg7tZ-KkFjLh1qvq4pLCmz8abYmnD-VwBAEPhTw2uoAuu2iPHR3WS4l1d8zwVa1ZfLEKF6qvtb44fxPtiE-sqJmuaU4jOYopovr2OkprYuX3uWomXHC_4RnX5n3aNuTZM9PaQc8tuzWCAMmx2ucP6Au6jDN67MRcbnT1SLmXzCdY1mtDCxOU30P2iOkhqcwJMDYdEfyHiUkJQfa6IdInsJkaNVaR-ncJEJX4V2OYJ69M0CY6sxACS9eSwtvrfT65aKnS0fNNZUDe5A-9w3
-
-#EXTINF:-1 tvg-id="radioimedi" group-title="Georgia (🇬🇪)",Radio Imedi
-https://tbs01-edge17.itdc.ge/radioimedi/tracks-v1a1/mono.m3u8?token=a4ipzkLqJkIizQfFABPpllveXU_LQWJurEZh4A5Kns0Yu8ikIZ_SU7ngTq4g6wHR_JzDHnOtTiZ-RsnGL3MMAXjQKl2NdvSAsv98EkKLOKIpHyM_4mjhDR3h7Y4iILjGB32FZz4MDp8rrUHXsojnKBcZbdZwRgBivUoc6pFEPBjn6Ao1xWUyJdGbFSTciHCmY7BrMN72cm6EbrKjAzaHL9KZmRKj7331vJ_Fr0PtXngQoUr_FdweVrnUkMLicdibL0TlD2A7ztq7toKcIBAkVlylZDn2Q-0BIyDNI_wryFFR87UeXyzoN_yGCG9GwEAJ
-
-#EXTINF:-1 tvg-id="musicbox" group-title="Georgia (🇬🇪)",MusicBox
-https://tbs01-edge17.itdc.ge/musicbox/tracks-v1a1/mono.m3u8?token=g2fRuOdEXpy-Q0Khk0hJsNq9_3sYRY-Zwkp6RIeK8QdrXxmuM3CyPzNG6-_XmnkVqYzUcYrDhdAR02cy225yysDofPZivlfNJKVEehsVyXj10wcTacyBhd5iKCHBJpY2IvK1FFrTfDnt5m2BeoKoIIo1mWpr9B-01YXHoQVTthOaytm2nkUoO-YnEIZPJ04iM64dFCraXXwUM4ULBbURBa3l6_X4e9mN5sjgJTmqctcsrsXelyiYlYQT2BILCvY-8rHjU_ifsRFpRJlvhZ54JPi_rdy_zwDVq5_Ijt79EKc8aT_SH_E25Ci8-VMxIXXQ
-
-#EXTINF:-1 tvg-id="bmg" group-title="Georgia (🇬🇪)",BMG
-https://tbs01-edge11.itdc.ge/bmg/tracks-v1a1/mono.m3u8?token=K-ky39NcCgP18ZMDv3Rs6COeTyjya4bvg-qJjqthaRCVRcJ5zVVJiN0swjvjzFZz1s21C1FLDDCGtanvcJBQtI9TQqe9OqgF18rv9Xx5ZidQKQoxwM5HjS5pbos4k2-r5bX1m0hecY6LrYPtDvdoh2Q8YIyirWV2eV50eduuWq55KI7vIhNOJGkSoica_vwL9H7EbdZzIQFDr8cYzBekr4cfVO_rckYloPPsjUXqtcQeNbuZoJua-jOLr9X5ERdoTjVjGOsIUfS8xgM7qkLkT1lV7O0IsW6cpEe9_FYpnYUhjwwXQ2Re-YwhpIZmfseZ
-
-#EXTINF:-1 tvg-id="qvemoqartli" group-title="Georgia (🇬🇪)",4TV (Qvemo Kartli)
-https://tbs01-edge17.itdc.ge/qvemoqartli/tracks-v1a1/mono.m3u8?token=LlGX8XI6eRoQaK3ZGypySYrQP5YZOkHQSmFwMgwROUMyt4n45nDEe6U4vz9Uj-lf8D8FKYfMYthqzprsfEO8vgFb490lSOB481LAq1FsA47KnvYd0oSqfQCRDh8hnADmptHMUCOgQEK6U7uZe-6ZPUkANiAPCKRo-E3tgifq8Kd5WMgFKyLmB476MearKcvc-8YIIr4llrj7jBqz7ipPlKej86v7k2lC4kEHaYL_1oIj1sX3Y1Cb3DuksMzazkyYJRrsKEFi4EcIC5NrwQhq-8r5TEumEMqJsp7r6c8LTBr9NiPFITI1SMDNMnpPbgKj
-
-#EXTINF:-1 tvg-id="girchitv" group-title="Georgia (🇬🇪)",Girchi Television
-https://tbs01-edge17.itdc.ge/girchitv/tracks-v1a1/mono.m3u8?token=lRWMq8YKT2B27rvWxyzcgPW0NWamNxI1vqHAa9jSWq0yZuovX_4Bg8V97i-PF19Kalfd5efEigULEpUyO2vNCiqyos79nTKJ_iFviyfvO9l4CdkJxVTvfysU3OFZQqI6R0QZajvAURDMz98I5tbftUCRV33OggkUjgsBe6IHwSagTZlnQLN8uzy1pvtPWoFG0-UQVZk8r83xOJvy-J6HRKXJP0KXLrjEKaC-1BqMytdBdj19Vaq-EJo_T0iF8f6YSl-VpTztwCxqGf7eUuEue9RXr-kZIbjbY7-p8tlIN13oRcSNew8wDzY7dpJFy-mn
-
-#EXTINF:-1 tvg-id="abkhaz" group-title="Georgia (🇬🇪)",The Voice Of Abkhazia
-https://tbs01-edge11.itdc.ge/abkhaz/tracks-v1a1/mono.m3u8?token=2onLwHWdPo6Q7PU2Ixiqur-WzHk0mlnRv5SjL14TUL9TW5GyUl1emnOqLvnxn4uDRYwCDP_v1IdHXlFsVRzepP60SLXM4ikAZ5ggOh6N_JtFn_bPh7pp10O_MMe5Ka8Ng7cQxEkZe0EeI5co4FJop476YbKgmiTIybi8f0Yg52h5FW2OyD7X0QRrRzI9xaAk0D-RvMAd_XmtBnAzXORcem_rMwuI7L5vzPfjHNkNrDtQLYLq1txXUjBEnVRAEU9vVdZa35XwDtSvOKTcHAn9dLeW0xbJLfr5Ub1uHJvj-I755rnus4RiNDe0wxmBy_hf
