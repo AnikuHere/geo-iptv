@@ -1,9 +1,9 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="rustavi2" group-title="Georgia (🇬🇪)",Rustavi 2
-http://31.146.5.178:8087/play/a008/index.m3u8
-#EXTINF:-1 tvg-id="rustavi2" group-title="Georgia (🇬🇪)",Rustavi 2 (Alt)
 http://nue01-edge01.itdc.ge/rustavi2hqnew/mpegts
+#EXTINF:-1 tvg-id="rustavi2" group-title="Georgia (🇬🇪)",Rustavi 2 (Primary Stream)
+http://31.146.5.178:8087/play/a008/index.m3u8
 
 #EXTINF:-1 tvg-id="pirveliarxi" group-title="Georgia (🇬🇪)",Pirveli Arxi (720p)
 https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8
@@ -30,11 +30,76 @@ http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
 #EXTINF:-1 tvg-id="comedy" group-title="Georgia (🇬🇪)",Comedy TV
 http://31.146.5.178:8087/play/a00b/index.m3u8
 
-#EXTINF:-1 tvg-id="rioni" group-title="Georgia (🇬🇪)",Rioni TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ertsulovaneba" group-title="Georgia (🇬🇪)",Ertsulovaneba
+https://stream.sstv.ge/live/sstv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="qartulibox" group-title="Georgia (🇬🇪)",QartuliBox
+https://fl1004.bozztv.com/ushba-a4/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="mtkvarichannel" group-title="Georgia (🇬🇪)",MtkvariChannel
+https://fl1004.bozztv.com/ushba-a2/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="filmebihd" group-title="Georgia (🇬🇪)",FilmebiHD
+https://fl1003.bozztv.com/ushba65/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="qartulifilmebi" group-title="Georgia (🇬🇪)",Qartuli Filmebi
+https://fl1003.bozztv.com/ushba51/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="qartulisimgerebi" group-title="Georgia (🇬🇪)",Qartuli Simgerebi
+https://fl1003.bozztv.com/ushba57/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="2TV.ge@SD" group-title="Georgia (🇬🇪)",2TV (720p)
+https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
+
+#EXTINF:-1 tvg-id="ApsuaTV.ge@SD" group-title="Georgia (🇬🇪)",Apsua TV
+https://gcmx3v3owcj.a.trbcdn.net/livemaster/ba7pu_fgej0zelpw.smil/playlist.m3u8?blstid=null
+
+#EXTINF:-1 tvg-id="BMGTV.ge@SD" group-title="Georgia (🇬🇪)",BMG TV
+https://tv.nucast.tv/lb/ge/bmg/index.m3u8
+
+#EXTINF:-1 tvg-id="ImediTV.ge@SD" group-title="Georgia (🇬🇪)",Imedi TV (1080p)
+https://tv.cdn.xsg.ge/imedihd/index.m3u8
+#EXTINF:-1 tvg-id="ImediTV.ge@SD" group-title="Georgia (🇬🇪)",Imedi TV (Alt)
+http://nue01-edge01.itdc.ge/imedihd/mpegts
+
+#EXTINF:-1 tvg-id="AbazaTV.ru@SD" group-title="Georgia (🇬🇪)",АБАЗА-ТВ (1080p)
+https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
+
+#EXTINF:-1 tvg-id="kavkasia" group-title="Alts (⚙️)",KavkasiaTV
+https://streaming-hls3.televizia.org/hls/kavkasia.m3u8
+
+#EXTINF:-1 tvg-id="rugbytv" group-title="Alts (⚙️)",RugbyTV
+https://streaming-hls1.televizia.org/hls/ragbitv.m3u8
+
+#EXTINF:-1 tvg-id="postv" group-title="Alts (⚙️)",POSTV
+https://streaming-hls2.televizia.org/hls/postv.m3u8
+
+#EXTINF:-1 tvg-id="obieqtivitv" group-title="Alts (⚙️)",Obieqtivi TV
+https://live20.bozztv.com/dvrfl05/gin-obieqtivitv/index.m3u8
+
+#EXTINF:-1 tvg-id="TVC.ge@SD" group-title="Alts (⚙️)",TVC (1080p)
+http://31.146.5.178:8087/play/a009/index.m3u8
+
+#EXTINF:-1 tvg-id="Adjarasport1.ge@SD" group-title="Alts (⚙️)",Adjarasport 1
+https://live20.bozztv.com/dvrfl05/gin-adjara/index.m3u8
+
+#EXTINF:-1 tvg-id="adjaratv" group-title="Alts (⚙️)",AdjaraTV
+https://streaming-hls2.televizia.org/hls/adjara.m3u8
+
+#EXTINF:-1 tvg-id="marao" group-title="Alts (⚙️)",Marao
+https://streaming-hls2.televizia.org/hls/marao.m3u8
+
+#EXTINF:-1 tvg-id="RioniTV.ge@SD" group-title="Alts (⚙️)",Rioni TV (720p) [Not 24/7]
 http://video.rionitv.com:9090/hls/live/rioni.m3u8
 
-#EXTINF:-1 tvg-id="marao" group-title="Georgia (🇬🇪)",Marao
-https://streaming-hls2.televizia.org/hls/marao.m3u8
+#EXTINF:-1 tvg-id="palitratv" group-title="Alts (⚙️)",Palitra News (480p) [Not 24/7]
+https://live.palitranews.ge/hls/palitratv/index.m3u8
+
+#EXTINF:-1 tvg-id="palitratv" group-title="Alts (⚙️)",Palitra News (Alt) [Not 24/7]
+https://livestream.palitra.ge/hls/palitratv/index.m3u8
+
+#EXTINF:-1 tvg-id="MtavariArkhi.ge@SD" group-title="Closed (❌)",Mtavari Arkhi
+https://live20.bozztv.com/dvrfl05/gin-mtavariarxi/index.m3u8https://streaming-hls2.televizia.org/hls/marao.m3u8
 
 #EXTINF:-1 tvg-id="adjaratv" group-title="Georgia (🇬🇪)",AdjaraTV
 https://streaming-hls2.televizia.org/hls/adjara.m3u8
