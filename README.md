@@ -5,7 +5,7 @@ Georgian channels for free - completely legal.
 # How to use -- გამოყენება
 Get a m3u8 player application like VLC /// ამისათვის დაგჭირდებათ M3U8 პლეიერის აპლიკაცია, მაგალითად VLC
 
-Point your player at <link> /// თქვენი პლეირე დააყენეთ წყარო ამ ლინკზე : <link>
+Point your player at https://github.com/AnikuHere/geo-iptv/blob/main/georgia_channels.m3u /// თქვენი პლეირე დააყენეთ წყარო ამ ლინკზე : https://github.com/AnikuHere/geo-iptv/blob/main/georgia_channels.m3u
 
 # Contribution - კონტრიბუცია
 If you want to // თუ გინდათ რომ:
