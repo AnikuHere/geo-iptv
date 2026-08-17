@@ -4,6 +4,7 @@ import sys
 import ssl
 import logging
 import urllib.request
+import urllib.error
 from datetime import datetime
 
 LOG_DIR = "logs_updater"
@@ -14,7 +15,6 @@ def get_log_filename(directory):
     if not os.path.exists(base_file):
         return base_file
     
-    # Format timestamp: 12:28_17d08m26y
     timestamp = datetime.now().strftime("%H:%M_%dd%mm%yy")
     existing_logs = [f for f in os.listdir(directory) if f.startswith("updater") and f.endswith(".log")]
     next_index = len(existing_logs) + 1
@@ -45,12 +45,19 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5",
 }
 
+def log_detailed_error(source_name, friendly_msg, raw_code_msg, snippet=None):
+    logging.error(f"[{source_name} FAILURE]")
+    logging.error(f"  └─ Reason (Human Readable): {friendly_msg}")
+    logging.error(f"  └─ Error Output / Raw Code: {raw_code_msg}")
+    if snippet:
+        logging.error(f"  └─ Source Body Snippet: {snippet}")
+
 def fetch_setanta_block():
     logging.info("Fetching Setanta Sports 3 from IPTV-ORG...")
     try:
         req = urllib.request.Request(IPTV_ORG_URL, headers=HEADERS)
         with urllib.request.urlopen(req, context=ssl_context, timeout=15) as resp:
-            content = resp.read().decode('utf-8')
+            content = resp.read().decode('utf-8', errors='ignore')
         
         pattern = r'(#EXTINF:-1 tvg-id="(?:SetantaSports3\.ge@SD|setanta3)"[^\n]*\n(?:#EXTVLCOPT:[^\n]*\n)?[^\n]+)'
         match = re.search(pattern, content)
@@ -59,11 +66,25 @@ def fetch_setanta_block():
             logging.info("Setanta block retrieved successfully.")
             return re.sub(r'tvg-id="[^"]+"', 'tvg-id="setanta3"', block)
         else:
-            logging.warning("Setanta pattern not matched in IPTV-ORG payload.")
+            snippet = content[:200].replace('\n', ' ').strip()
+            log_detailed_error(
+                "Setanta",
+                "Channel block missing from remote playlist (IPTV-ORG layout updated or channel removed).",
+                f"Regex Pattern Match Failed | Remote Payload Length: {len(content)} chars",
+                snippet=snippet
+            )
             return None
+
+    except urllib.error.HTTPError as e:
+        log_detailed_error("Setanta", "HTTP Request Denied / Server Error", f"HTTPError {e.code}: {e.reason}")
+    except urllib.error.URLError as e:
+        log_detailed_error("Setanta", "Connection Failed / Network Blocked", f"URLError: {e.reason}")
+    except TimeoutError:
+        log_detailed_error("Setanta", "Request Timed Out", "TimeoutError: Request exceeded 15 second limit")
     except Exception as e:
-        logging.error(f"Setanta fetch failed: {e}")
-        return None
+        log_detailed_error("Setanta", "Unexpected Execution Error", f"{type(e).__name__}: {str(e)}")
+        
+    return None
 
 def generate_gds_link():
     logging.info("Extracting GDS link from tv.mar.tv...")
@@ -72,7 +93,8 @@ def generate_gds_link():
     try:
         req = urllib.request.Request(page_url, headers=HEADERS)
         with urllib.request.urlopen(req, context=ssl_context, timeout=15) as resp:
-            html = resp.read().decode('utf-8')
+            status = resp.getcode()
+            html = resp.read().decode('utf-8', errors='ignore')
         
         pattern = r'https?://[a-zA-Z0-9\.-]+\.mar\.tv/[a-f0-9]{32,64}/13[a-zA-Z0-9]*/index\.m3u8'
         match = re.search(pattern, html)
@@ -86,9 +108,26 @@ def generate_gds_link():
             logging.info(f"Generated GDS token stream URL: {generated}")
             return generated
 
-        logging.warning("Could not extract video token from GDS HTML source.")
+        title_match = re.search(r'<title>(.*?)</title>', html, re.IGNORECASE)
+        page_title = title_match.group(1).strip() if title_match else "No <title> tag found"
+        snippet = html[:250].replace('\n', ' ').strip()
+        
+        log_detailed_error(
+            "GDS",
+            "Stream token missing in HTML (Site layout changed, bot challenge present, or dynamic loading in use).",
+            f"PatternMatchError | HTTP Status: {status} | Title: '{page_title}' | Response Size: {len(html)} bytes",
+            snippet=snippet
+        )
+        return None
+
+    except urllib.error.HTTPError as e:
+        log_detailed_error("GDS", "HTTP Request Denied / Server Error", f"HTTPError {e.code}: {e.reason}")
+    except urllib.error.URLError as e:
+        log_detailed_error("GDS", "Connection Failed / Network Blocked", f"URLError: {e.reason}")
+    except TimeoutError:
+        log_detailed_error("GDS", "Request Timed Out", "TimeoutError: Request exceeded 15 second limit")
     except Exception as e:
-        logging.error(f"GDS fetch failed: {e}")
+        log_detailed_error("GDS", "Unexpected Execution Error", f"{type(e).__name__}: {str(e)}")
         
     return None
 
@@ -103,8 +142,8 @@ def update_my_playlist():
     try:
         with open(MY_M3U_FILE, 'r', encoding='utf-8') as f:
             my_content = f.read()
-    except FileNotFoundError:
-        logging.error(f"Target M3U file '{MY_M3U_FILE}' not found.")
+    except FileNotFoundError as e:
+        log_detailed_error("M3U Local File", "Target playlist file missing in local repository path.", f"FileNotFoundError: {e}")
         sys.exit(1)
 
     updated = False
