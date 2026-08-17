@@ -1,0 +1,8 @@
+2026-08-17 08:30:43,370 [INFO] === UPDATE EXECUTION STARTED (Log: updater.log) ===
+2026-08-17 08:30:43,371 [INFO] Fetching Setanta Sports 3 from IPTV-ORG...
+2026-08-17 08:30:43,513 [INFO] Setanta block retrieved successfully.
+2026-08-17 08:30:43,514 [INFO] Extracting GDS link from tv.mar.tv...
+2026-08-17 08:30:44,392 [WARNING] Could not extract video token from GDS HTML source.
+2026-08-17 08:30:44,392 [INFO] Updated Setanta entry in playlist.
+2026-08-17 08:30:44,393 [INFO] Saved changes to georgia_channels.m3u.
+2026-08-17 08:30:44,393 [INFO] === UPDATE EXECUTION FINISHED ===
