@@ -1,91 +1,31 @@
-import re
-import urllib.request
-import ssl
+name: Update Stream Links
 
-IPTV_ORG_URL = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ge.m3u"
-MY_M3U_FILE = "ge.m3u"  # Make sure this matches your repo file name exactly
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Runs automatically every 6 hours
+  workflow_dispatch:      # Manual trigger from Actions tab
 
-# Create unverified SSL context to bypass cert errors on cloud runners
-ssl_context = ssl.create_default_context()
-ssl_context.check_hostname = False
-ssl_context.verify_mode = ssl.CERT_NONE
+permissions:
+  contents: write
 
-def fetch_setanta_block():
-    try:
-        req = urllib.request.Request(
-            IPTV_ORG_URL, 
-            headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-        )
-        with urllib.request.urlopen(req, context=ssl_context) as resp:
-            content = resp.read().decode('utf-8')
-        
-        # Match Setanta Sports 3 block from IPTV-ORG
-        pattern = r'(#EXTINF:-1 tvg-id="SetantaSports3\.ge@SD"[^\n]*\n#EXTVLCOPT:[^\n]*\n[^\n]+)'
-        match = re.search(pattern, content)
-        if match:
-            # Rebrand the tvg-id to setanta3 to match your file format
-            block = match.group(1).strip()
-            return block.replace('tvg-id="SetantaSports3.ge@SD"', 'tvg-id="setanta3"')
-        return None
-    except Exception as e:
-        print(f"Failed to fetch Setanta from IPTV-ORG: {e}")
-        return None
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-def generate_gds_link():
-    page_url = "https://tv.mar.tv/13"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Referer": "https://tv.mar.tv/"
-    }
-    
-    try:
-        req = urllib.request.Request(page_url, headers=headers)
-        with urllib.request.urlopen(req, context=ssl_context) as resp:
-            html = resp.read().decode('utf-8')
-        
-        # 1. Search for direct index.m3u8 stream URL
-        pattern = r'https?://[a-zA-Z0-9\.-]+\.mar\.tv/[a-f0-9]{32,64}/13[a-zA-Z0-9]*/index\.m3u8'
-        match = re.search(pattern, html)
-        if match:
-            return match.group(0)
-        
-        # 2. Fallback: Search for 64-char dynamic hash
-        token_match = re.search(r'([a-f0-9]{64})', html)
-        if token_match:
-            return f"https://live1.mar.tv/{token_match.group(1)}/13sd/index.m3u8"
-    except Exception as e:
-        print(f"Failed to extract GDS link: {e}")
-        
-    return None
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-def update_my_playlist():
-    setanta_block = fetch_setanta_block()
-    new_gds_url = generate_gds_link()
+      - name: Run update script
+        run: python update_playlist.py
 
-    with open(MY_M3U_FILE, 'r', encoding='utf-8') as f:
-        my_content = f.read()
-
-    # Match existing Setanta entry (handles setanta3 or SetantaSports3.ge@SD)
-    if setanta_block:
-        existing_setanta = r'#EXTINF:-1 tvg-id="(?:setanta3|SetantaSports3\.ge@SD)"[^\n]*\n(?:#EXTVLCOPT:[^\n]*\n)?[^\n]+'
-        if re.search(existing_setanta, my_content):
-            my_content = re.sub(existing_setanta, setanta_block, my_content)
-            print("Setanta Sports 3 updated successfully.")
-        else:
-            print("Setanta pattern not found in local file.")
-
-    # Match existing GDS entry
-    if new_gds_url:
-        gds_pattern = r'(#EXTINF:-1 tvg-id="gds"[^\n]*\n)[^\n]+'
-        if re.search(gds_pattern, my_content):
-            my_content = re.sub(gds_pattern, r'\g<1>' + new_gds_url, my_content)
-            print(f"GDS TV updated: {new_gds_url}")
-        else:
-            print("GDS pattern not found in local file.")
-
-    with open(MY_M3U_FILE, 'w', encoding='utf-8') as f:
-        f.write(my_content)
-
-if __name__ == "__main__":
-    update_my_playlist()
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add georgia_channels.m3u
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Setanta and GDS links [skip ci]" && git push)
