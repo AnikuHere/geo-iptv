@@ -1,0 +1,13 @@
+2026-08-17 11:20:54,753 [INFO] === UPDATE EXECUTION STARTED (Log: updater_4_11:20_17d08m26y.log) ===
+2026-08-17 11:20:54,753 [INFO] Fetching Setanta Sports 3 from IPTV-ORG...
+2026-08-17 11:20:54,890 [INFO] Setanta block retrieved successfully.
+2026-08-17 11:20:54,891 [INFO] Launching Chromium instance to capture GDS network requests...
+2026-08-17 11:21:01,062 [INFO] Intercepted m3u8 request: https://live1.mar.tv/1112afe554da6db07c1d7c7f3f8dd4f34bfbf035788436988bb69df83e1ebc4c/13sd/index.m3u8
+2026-08-17 11:21:01,063 [INFO] Intercepted m3u8 request: https://live1.mar.tv/1112afe554da6db07c1d7c7f3f8dd4f34bfbf035788436988bb69df83e1ebc4c/13sd/index.m3u8
+2026-08-17 11:21:01,711 [INFO] Intercepted m3u8 request: https://live1.mar.tv/1112afe554da6db07c1d7c7f3f8dd4f34bfbf035788436988bb69df83e1ebc4c/13sd/index.m3u8
+2026-08-17 11:21:02,915 [INFO] Intercepted m3u8 request: https://live1.mar.tv/1112afe554da6db07c1d7c7f3f8dd4f34bfbf035788436988bb69df83e1ebc4c/13sd/index.m3u8
+2026-08-17 11:21:04,401 [INFO] Successfully extracted GDS stream URL: https://live1.mar.tv/1112afe554da6db07c1d7c7f3f8dd4f34bfbf035788436988bb69df83e1ebc4c/13sd/index.m3u8
+2026-08-17 11:21:04,401 [INFO] Updated Setanta entry in playlist.
+2026-08-17 11:21:04,401 [INFO] Updated GDS entry in playlist.
+2026-08-17 11:21:04,402 [INFO] Saved changes to georgia_channels.m3u.
+2026-08-17 11:21:04,402 [INFO] === UPDATE EXECUTION FINISHED ===

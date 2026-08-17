@@ -24,8 +24,9 @@ https://live.adjarasport.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="mtavari" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mtavari_Arkhi_2019.svg/250px-Mtavari_Arkhi_2019.svg.png" group-title="General",Mtavari Arkhi
 https://live.mtavari.tv/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="setanta3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Adjarasport_logo.svg/1920px-Adjarasport_logo.svg.png" group-title="Sports",Setanta Sports 3
-https://example.com/stream/setanta3.m3u8
+#EXTINF:-1 tvg-id="setanta3",Setanta Sports 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+http://158.101.222.193:88/georgia_play.php?id=setanta_sports_3
 
 #EXTINF:-1 tvg-id="gds" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Maestro_tv.png/250px-Maestro_tv.png" group-title="General",GDS TV
-https://live1.mar.tv/placeholder/13sd/index.m3u8
+https://live1.mar.tv/1112afe554da6db07c1d7c7f3f8dd4f34bfbf035788436988bb69df83e1ebc4c/13sd/index.m3u8
