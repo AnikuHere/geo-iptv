@@ -1,0 +1,11 @@
+2026-08-17 08:33:45,441 [INFO] === UPDATE EXECUTION STARTED (Log: updater_2_08:33_17d08m26y.log) ===
+2026-08-17 08:33:45,442 [INFO] Fetching Setanta Sports 3 from IPTV-ORG...
+2026-08-17 08:33:45,537 [INFO] Setanta block retrieved successfully.
+2026-08-17 08:33:45,537 [INFO] Extracting GDS link from tv.mar.tv...
+2026-08-17 08:33:46,157 [ERROR] [GDS FAILURE]
+2026-08-17 08:33:46,157 [ERROR]   └─ Reason (Human Readable): Stream token missing in HTML (Site layout changed, bot challenge present, or dynamic loading in use).
+2026-08-17 08:33:46,157 [ERROR]   └─ Error Output / Raw Code: PatternMatchError | HTTP Status: 200 | Title: 'MarTV - ონლაინ ტელევიზია' | Response Size: 2773 bytes
+2026-08-17 08:33:46,157 [ERROR]   └─ Source Body Snippet: <!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/logo.webp"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="MarTV ონ
+2026-08-17 08:33:46,158 [INFO] Updated Setanta entry in playlist.
+2026-08-17 08:33:46,158 [INFO] Saved changes to georgia_channels.m3u.
+2026-08-17 08:33:46,159 [INFO] === UPDATE EXECUTION FINISHED ===
