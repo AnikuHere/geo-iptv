@@ -6,6 +6,7 @@ import logging
 import urllib.request
 import urllib.error
 from datetime import datetime
+from playwright.sync_api import sync_playwright
 
 LOG_DIR = "logs_updater"
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -87,49 +88,47 @@ def fetch_setanta_block():
     return None
 
 def generate_gds_link():
-    logging.info("Extracting GDS link from tv.mar.tv...")
+    logging.info("Launching Chromium instance to capture GDS network requests...")
+    captured_stream_url = None
     page_url = "https://tv.mar.tv/13"
-    
+
     try:
-        req = urllib.request.Request(page_url, headers=HEADERS)
-        with urllib.request.urlopen(req, context=ssl_context, timeout=15) as resp:
-            status = resp.getcode()
-            html = resp.read().decode('utf-8', errors='ignore')
-        
-        pattern = r'https?://[a-zA-Z0-9\.-]+\.mar\.tv/[a-f0-9]{32,64}/13[a-zA-Z0-9]*/index\.m3u8'
-        match = re.search(pattern, html)
-        if match:
-            logging.info(f"Direct GDS stream URL matched: {match.group(0)}")
-            return match.group(0)
-        
-        token_match = re.search(r'([a-f0-9]{64})', html)
-        if token_match:
-            generated = f"https://live1.mar.tv/{token_match.group(1)}/13sd/index.m3u8"
-            logging.info(f"Generated GDS token stream URL: {generated}")
-            return generated
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=HEADERS["User-Agent"])
+            page = context.new_page()
 
-        title_match = re.search(r'<title>(.*?)</title>', html, re.IGNORECASE)
-        page_title = title_match.group(1).strip() if title_match else "No <title> tag found"
-        snippet = html[:250].replace('\n', ' ').strip()
-        
-        log_detailed_error(
-            "GDS",
-            "Stream token missing in HTML (Site layout changed, bot challenge present, or dynamic loading in use).",
-            f"PatternMatchError | HTTP Status: {status} | Title: '{page_title}' | Response Size: {len(html)} bytes",
-            snippet=snippet
-        )
-        return None
+            def handle_request(request):
+                nonlocal captured_stream_url
+                url = request.url
+                if ".m3u8" in url:
+                    logging.info(f"Intercepted m3u8 request: {url}")
+                    captured_stream_url = url
 
-    except urllib.error.HTTPError as e:
-        log_detailed_error("GDS", "HTTP Request Denied / Server Error", f"HTTPError {e.code}: {e.reason}")
-    except urllib.error.URLError as e:
-        log_detailed_error("GDS", "Connection Failed / Network Blocked", f"URLError: {e.reason}")
-    except TimeoutError:
-        log_detailed_error("GDS", "Request Timed Out", "TimeoutError: Request exceeded 15 second limit")
+            page.on("request", handle_request)
+
+            try:
+                page.goto(page_url, wait_until="domcontentloaded", timeout=25000)
+                page.wait_for_timeout(5000)  # Allow JS video player time to request stream
+            except Exception as e:
+                logging.warning(f"Browser navigation notice: {e}")
+
+            browser.close()
+
+        if captured_stream_url:
+            logging.info(f"Successfully extracted GDS stream URL: {captured_stream_url}")
+            return captured_stream_url
+        else:
+            log_detailed_error(
+                "GDS",
+                "No .m3u8 network request detected during browser session.",
+                "PlaywrightNetworkListenerError | 0 .m3u8 requests captured during page load window."
+            )
+            return None
+
     except Exception as e:
-        log_detailed_error("GDS", "Unexpected Execution Error", f"{type(e).__name__}: {str(e)}")
-        
-    return None
+        log_detailed_error("GDS", "Headless Browser Execution Failed", f"PlaywrightError: {type(e).__name__}: {str(e)}")
+        return None
 
 def update_my_playlist():
     setanta_block = fetch_setanta_block()
