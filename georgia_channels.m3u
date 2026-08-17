@@ -16,7 +16,7 @@ https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8
 https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8
 
 #EXTINF:-1 tvg-id="gds" group-title="Georgia (🇬🇪)",GDS TV
-http://31.146.5.178:8087/play/a00a/index.m3u8
+https://live1.mar.tv/74e1619750e3cfcdf4a3d5d97899a736451ba43b575f86e6ec5c8d68413cfee2/13sd/index.m3u8
 
 #EXTINF:-1 tvg-id="silk" group-title="Georgia (🇬🇪)",SilkUniversalHD
 https://streaming-hls4.televizia.org/hls/silk.m3u8
