@@ -1,15 +1,16 @@
-name: Auto-Update Playlist
+name: Update Stream Links
 
 on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10  # Kills the job automatically if it gets stuck for more than 10 mins
+permissions:
+  contents: write
 
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -17,24 +18,21 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-          cache: 'pip'
+          python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           pip install playwright
-          # Install ONLY the Chromium browser binary to save time and prevent hanging
-          playwright install chromium --with-deps
+          playwright install --with-deps chromium
 
-      - name: Run script
-        run: |
-          python your_script.py  # Replace with your actual python script filename
+      - name: Run update script
+        run: python update_playlist.py
 
       - name: Commit and push changes
+        if: always()
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Auto-update playlist via cron [skip ci]" || exit 0
-          git push
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add georgia_channels.m3u logs_updater/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update stream links & logs [skip ci]" && git push)
