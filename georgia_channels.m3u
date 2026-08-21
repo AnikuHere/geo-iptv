@@ -1,307 +1,437 @@
 #EXTM3U
 
+
+
 #EXTINF:-1 tvg-id="rustavi2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Rustavi_2_logo.png/250px-Rustavi_2_logo.png" group-title="Georgia (🇬🇪)",Rustavi 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live8.mar.tv/1/4rd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="rustavi2_alt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Rustavi_2_logo.png/250px-Rustavi_2_logo.png" group-title="Georgia (🇬🇪)",Rustavi 2 (Alt Stream)
+
 http://31.146.5.178:8087/play/a008/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="pirveliarxi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/250px-Pirveli_Arkhi_Logo_2022.svg.png" group-title="Georgia (🇬🇪)",Pirveli Arxi (720p)
+
 https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="pirveliarxi_alt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/250px-Pirveli_Arkhi_Logo_2022.svg.png" group-title="Georgia (🇬🇪)",Pirveli Arxi (Alt)
+
 http://nue01-edge01.itdc.ge/gpb/mpegts
 
+
+
 #EXTINF:-1 tvg-id="formula" group-title="Georgia (🇬🇪)",Formula (1080p)
+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+
 #EXTVLCOPT:http-referrer=https://formula.ge/
+
 https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="formula_alt" group-title="Georgia (🇬🇪)",Formula (Playlist)
+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+
 #EXTVLCOPT:http-referrer=https://formula.ge/
+
 https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8
 
+
+
 #EXTINF:-1 tvg-id="axaliformula" group-title="Georgia (🇬🇪)",Axali Formula
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/axaliformla/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="gds" group-title="Georgia (🇬🇪)",GDS TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live1.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/13sd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="silkuniversal" group-title="Georgia (🇬🇪)",SilkUniversalHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/1arxiweb/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="setanta3",Setanta Sports 3
+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+
 http://158.101.222.193:88/georgia_play.php?id=setanta_sports_3
 
+
+
 #EXTINF:-1 tvg-id="tvpirveli" group-title="Georgia (🇬🇪)",TV Pirveli
+
 http://nue01-edge01.itdc.ge/pirvelitv/mpegts
 
+
+
 #EXTINF:-1 tvg-id="euronewsgeorgia" group-title="Georgia (🇬🇪)",Euronews Georgia
+
 http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
 
+
+
 #EXTINF:-1 tvg-id="comedy" group-title="Georgia (🇬🇪)",Comedy TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/14rd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="maestro" group-title="Georgia (🇬🇪)",Maestro
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/352m/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="tv25" group-title="Georgia (🇬🇪)",TV25
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/23tv25/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="ertsulovaneba" group-title="Georgia (🇬🇪)",Ertsulovaneba
+
 https://stream.sstv.ge/live/sstv/playlist.m3u8
 
+
+
 #EXTINF:-1 tvg-id="qartulibox" group-title="Georgia (🇬🇪)",QartuliBox
+
 https://fl1004.bozztv.com/ushba-a4/tracks-v1a1/mono.m3u8
 
+
+
 #EXTINF:-1 tvg-id="mtkvarichannel" group-title="Georgia (🇬🇪)",MtkvariChannel
+
 https://fl1004.bozztv.com/ushba-a2/tracks-v1a1/mono.m3u8
 
+
+
 #EXTINF:-1 tvg-id="filmebihd" group-title="Georgia (🇬🇪)",FilmebiHD
+
 https://fl1003.bozztv.com/ushba65/tracks-v1a1/mono.m3u8
 
+
+
 #EXTINF:-1 tvg-id="qartulifilmebi" group-title="Georgia (🇬🇪)",Qartuli Filmebi
+
 https://fl1003.bozztv.com/ushba51/tracks-v1a1/mono.m3u8
 
+
+
 #EXTINF:-1 tvg-id="qartulisimgerebi" group-title="Georgia (🇬🇪)",Qartuli Simgerebi
+
 https://fl1003.bozztv.com/ushba57/tracks-v1a1/mono.m3u8
 
+
+
 #EXTINF:-1 tvg-id="2TV.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/250px-Pirveli_Arkhi_Logo_2022.svg.png" group-title="Georgia (🇬🇪)",2TV (720p)
+
 https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="ApsuaTV.ge@SD" group-title="Georgia (🇬🇪)",Apsua TV
+
 https://gcmx3v3owcj.a.trbcdn.net/livemaster/ba7pu_fgej0zelpw.smil/playlist.m3u8?blstid=null
 
+
+
 #EXTINF:-1 tvg-id="BMGTV.ge@SD" group-title="Georgia (🇬🇪)",BMG TV
+
 https://tv.nucast.tv/lb/ge/bmg/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="ImediTV.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Imedi_Logo.png/250px-Imedi_Logo.png" group-title="Georgia (🇬🇪)",Imedi TV (1080p)
+
 https://tv.cdn.xsg.ge/imedihd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="ImediTV_alt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Imedi_Logo.png/250px-Imedi_Logo.png" group-title="Georgia (🇬🇪)",Imedi TV (Alt)
+
 http://nue01-edge01.itdc.ge/imedihd/mpegts
 
+
+
 #EXTINF:-1 tvg-id="AbazaTV.ru@SD" group-title="Georgia (🇬🇪)",АБАЗА-ТВ (1080p)
+
 https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="kavkasia" group-title="Georgia (🇬🇪)",KavkasiaTV
+
 https://streaming-hls3.televizia.org/hls/kavkasia.m3u8
 
+
+
 #EXTINF:-1 tvg-id="rugbytv" group-title="Georgia (🇬🇪)",RugbyTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/160m/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="postv" tvg-logo="https://yt3.googleusercontent.com/W2Krl3yrq4T0DWDMXhcuk-jFTP5m1wUpcO_b11WNbNBiYY4lw5w8olUCuqJM7q_olPfhFeD1-A=s160-c-k-c0x00ffffff-no-rj" group-title="Georgia (🇬🇪)",POSTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/postvw/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="obieqtivitv" group-title="Georgia (🇬🇪)",Obieqtivi TV
+
 https://live20.bozztv.com/dvrfl05/gin-obieqtivitv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="TVC.ge@SD" group-title="Georgia (🇬🇪)",TVC (1080p)
+
 http://31.146.5.178:8087/play/a009/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="Adjarasport1.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Adjarasport_logo.svg/1920px-Adjarasport_logo.svg.png" group-title="Georgia (🇬🇪)",Adjarasport 1
+
 https://live20.bozztv.com/dvrfl05/gin-adjara/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="adjaratv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/ADJARA_TV_LOGO_2016.png/250px-ADJARA_TV_LOGO_2016.png" group-title="Georgia (🇬🇪)",AdjaraTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/19rd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="marao" group-title="Georgia (🇬🇪)",Marao
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/12sd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="rionitv" group-title="Georgia (🇬🇪)",Rioni TV (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/20rionn/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="palitratv" group-title="Georgia (🇬🇪)",Palitra News (480p) [Not 24/7]
+
 https://live.palitranews.ge/hls/palitratv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="palitratv_alt" group-title="Georgia (🇬🇪)",Palitra News (Alt) [Not 24/7]
+
 https://livestream.palitra.ge/hls/palitratv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="MtavariArkhi.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mtavari_Arkhi_2019.svg/250px-Mtavari_Arkhi_2019.svg.png" group-title="Georgia (🇬🇪)",Mtavari Arkhi
+
 https://live20.bozztv.com/dvrfl05/gin-mtavariarxi/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="bbb" group-title="Georgia (🇬🇪)",BBB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/16sd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="enkibenki" group-title="Georgia (🇬🇪)",EnkiBenki
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/17e/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="tv4rustavi" group-title="Georgia (🇬🇪)",TV4Rustavi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/24tw4/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="trialeti" group-title="Georgia (🇬🇪)",Trialeti TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/trialleti/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="dardimandi" group-title="Georgia (🇬🇪)",Dardimandi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/27/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="agro" group-title="Georgia (🇬🇪)",Agro
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/28/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="samefo" group-title="Georgia (🇬🇪)",Samefo Arxi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/29/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="megatv" group-title="Georgia (🇬🇪)",MegaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/32st/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="qartuliarxi" group-title="Georgia (🇬🇪)",QartuliArxi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/qartuli/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="musicbox" group-title="Georgia (🇬🇪)",MusicBox Georgia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/34musge/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="marneuli" group-title="Georgia (🇬🇪)",MarneuliTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/37marn/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="o2" group-title="Georgia (🇬🇪)",O2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/40/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="guria" group-title="Georgia (🇬🇪)",GuriaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/42/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="imervizia" group-title="Georgia (🇬🇪)",Imervizia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/imervizia/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="diatv" group-title="Georgia (🇬🇪)",DiaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/dia/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="chveniarxi" group-title="Georgia (🇬🇪)",ChveniArxi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live3.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/45rd/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="batumitv" group-title="Georgia (🇬🇪)",BatumiTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/46/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="rcheuli" group-title="Georgia (🇬🇪)",Rcheuli
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/47/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="gurjaani" group-title="Georgia (🇬🇪)",Gurjaani
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/48m/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="molitv" group-title="Georgia (🇬🇪)",MoliTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/mollltv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="agrogaremo" group-title="Georgia (🇬🇪)",AgroGaremo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/agrogaremo/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="mexute" group-title="Georgia (🇬🇪)",MexuteArxi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/50/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="artv" group-title="Georgia (🇬🇪)",ArTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/tafutv/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="meteo24" group-title="Georgia (🇬🇪)",Meteo24
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/56/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="georgiantimes" group-title="Georgia (🇬🇪)",GeorgianTimes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/57/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="gms" group-title="Georgia (🇬🇪)",GMS
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live5.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/161/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="aiatv" group-title="Georgia (🇬🇪)",AiaTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/aia/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="batumi2" group-title="Georgia (🇬🇪)",Batumi2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/batumitv2/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="altinfo" group-title="Georgia (🇬🇪)",AltInfo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/altinfo/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="parliament" group-title="Georgia (🇬🇪)",Parliament
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/parlament/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="mzetv" group-title="Georgia (🇬🇪)",MzeTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
+
 https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/mze/index.m3u8
 
+
+
 #EXTINF:-1 tvg-id="egrisi" group-title="Georgia (🇬🇪)",EgrisiTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://mar.tv/
-https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/egrisi/index.m3u8
+
+https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/egrisi/index.m3u
