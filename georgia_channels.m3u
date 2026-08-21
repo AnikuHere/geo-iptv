@@ -1,15 +1,15 @@
 #EXTM3U
 
 #EXTINF:-1 tvg-id="rustavi2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Rustavi_2_logo.png/250px-Rustavi_2_logo.png" group-title="Georgia (🇬🇪)",Rustavi 2
-http://nue01-edge01.itdc.ge/rustavi2hqnew/mpegts
+http://pending.update/stream.m3u8
 
-#EXTINF:-1 tvg-id="rustavi2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Rustavi_2_logo.png/250px-Rustavi_2_logo.png" group-title="Georgia (🇬🇪)",Rustavi 2 (Primary Stream)
+#EXTINF:-1 tvg-id="rustavi2_alt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Rustavi_2_logo.png/250px-Rustavi_2_logo.png" group-title="Georgia (🇬🇪)",Rustavi 2 (Alt Stream)
 http://31.146.5.178:8087/play/a008/index.m3u8
 
 #EXTINF:-1 tvg-id="pirveliarxi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/250px-Pirveli_Arkhi_Logo_2022.svg.png" group-title="Georgia (🇬🇪)",Pirveli Arxi (720p)
 https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8
 
-#EXTINF:-1 tvg-id="pirveliarxi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/250px-Pirveli_Arkhi_Logo_2022.svg.png" group-title="Georgia (🇬🇪)",Pirveli Arxi (Alt)
+#EXTINF:-1 tvg-id="pirveliarxi_alt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/250px-Pirveli_Arkhi_Logo_2022.svg.png" group-title="Georgia (🇬🇪)",Pirveli Arxi (Alt)
 http://nue01-edge01.itdc.ge/gpb/mpegts
 
 #EXTINF:-1 tvg-id="formula" group-title="Georgia (🇬🇪)",Formula (1080p)
@@ -17,16 +17,19 @@ http://nue01-edge01.itdc.ge/gpb/mpegts
 #EXTVLCOPT:http-referrer=https://formula.ge/
 https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8
 
-#EXTINF:-1 tvg-id="formula" group-title="Georgia (🇬🇪)",Formula (Playlist)
+#EXTINF:-1 tvg-id="formula_alt" group-title="Georgia (🇬🇪)",Formula (Playlist)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://formula.ge/
 https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8
 
+#EXTINF:-1 tvg-id="axaliformula" group-title="Georgia (🇬🇪)",Axali Formula
+http://pending.update/stream.m3u8
+
 #EXTINF:-1 tvg-id="gds" group-title="Georgia (🇬🇪)",GDS TV
-https://live1.mar.tv/4282a7815ab55fe4432047edd0dc4c93ba87ddb4f8dbdc5955c2f5b9a7ffe88d/13sd/index.m3u8
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="silk" group-title="Georgia (🇬🇪)",SilkUniversalHD
-https://streaming-hls4.televizia.org/hls/silk.m3u8
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="setanta3",Setanta Sports 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
@@ -39,7 +42,13 @@ http://nue01-edge01.itdc.ge/pirvelitv/mpegts
 http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
 
 #EXTINF:-1 tvg-id="comedy" group-title="Georgia (🇬🇪)",Comedy TV
-http://31.146.5.178:8087/play/a00b/index.m3u8
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="maestro" group-title="Georgia (🇬🇪)",Maestro
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="tv25" group-title="Georgia (🇬🇪)",TV25
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="ertsulovaneba" group-title="Georgia (🇬🇪)",Ertsulovaneba
 https://stream.sstv.ge/live/sstv/playlist.m3u8
@@ -71,7 +80,7 @@ https://tv.nucast.tv/lb/ge/bmg/index.m3u8
 #EXTINF:-1 tvg-id="ImediTV.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Imedi_Logo.png/250px-Imedi_Logo.png" group-title="Georgia (🇬🇪)",Imedi TV (1080p)
 https://tv.cdn.xsg.ge/imedihd/index.m3u8
 
-#EXTINF:-1 tvg-id="ImediTV.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Imedi_Logo.png/250px-Imedi_Logo.png" group-title="Georgia (🇬🇪)",Imedi TV (Alt)
+#EXTINF:-1 tvg-id="ImediTV_alt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Imedi_Logo.png/250px-Imedi_Logo.png" group-title="Georgia (🇬🇪)",Imedi TV (Alt)
 http://nue01-edge01.itdc.ge/imedihd/mpegts
 
 #EXTINF:-1 tvg-id="AbazaTV.ru@SD" group-title="Georgia (🇬🇪)",АБАЗА-ТВ (1080p)
@@ -81,10 +90,10 @@ https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
 https://streaming-hls3.televizia.org/hls/kavkasia.m3u8
 
 #EXTINF:-1 tvg-id="rugbytv" group-title="Georgia (🇬🇪)",RugbyTV
-https://streaming-hls1.televizia.org/hls/ragbitv.m3u8
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="postv" tvg-logo="https://yt3.googleusercontent.com/W2Krl3yrq4T0DWDMXhcuk-jFTP5m1wUpcO_b11WNbNBiYY4lw5w8olUCuqJM7q_olPfhFeD1-A=s160-c-k-c0x00ffffff-no-rj" group-title="Georgia (🇬🇪)",POSTV
-https://streaming-hls2.televizia.org/hls/postv.m3u8
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="obieqtivitv" group-title="Georgia (🇬🇪)",Obieqtivi TV
 https://live20.bozztv.com/dvrfl05/gin-obieqtivitv/index.m3u8
@@ -96,19 +105,115 @@ http://31.146.5.178:8087/play/a009/index.m3u8
 https://live20.bozztv.com/dvrfl05/gin-adjara/index.m3u8
 
 #EXTINF:-1 tvg-id="adjaratv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/ADJARA_TV_LOGO_2016.png/250px-ADJARA_TV_LOGO_2016.png" group-title="Georgia (🇬🇪)",AdjaraTV
-https://streaming-hls2.televizia.org/hls/adjara.m3u8
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="marao" group-title="Georgia (🇬🇪)",Marao
-https://streaming-hls2.televizia.org/hls/marao.m3u8
+http://pending.update/stream.m3u8
 
-#EXTINF:-1 tvg-id="RioniTV.ge@SD" group-title="Georgia (🇬🇪)",Rioni TV (720p) [Not 24/7]
-http://video.rionitv.com:9090/hls/live/rioni.m3u8
+#EXTINF:-1 tvg-id="rionitv" group-title="Georgia (🇬🇪)",Rioni TV (720p) [Not 24/7]
+http://pending.update/stream.m3u8
 
 #EXTINF:-1 tvg-id="palitratv" group-title="Georgia (🇬🇪)",Palitra News (480p) [Not 24/7]
 https://live.palitranews.ge/hls/palitratv/index.m3u8
 
-#EXTINF:-1 tvg-id="palitratv" group-title="Georgia (🇬🇪)",Palitra News (Alt) [Not 24/7]
+#EXTINF:-1 tvg-id="palitratv_alt" group-title="Georgia (🇬🇪)",Palitra News (Alt) [Not 24/7]
 https://livestream.palitra.ge/hls/palitratv/index.m3u8
 
 #EXTINF:-1 tvg-id="MtavariArkhi.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mtavari_Arkhi_2019.svg/250px-Mtavari_Arkhi_2019.svg.png" group-title="Georgia (🇬🇪)",Mtavari Arkhi
 https://live20.bozztv.com/dvrfl05/gin-mtavariarxi/index.m3u8
+
+#EXTINF:-1 tvg-id="bbb" group-title="Georgia (🇬🇪)",BBB
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="enkibenki" group-title="Georgia (🇬🇪)",EnkiBenki
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="tv4rustavi" group-title="Georgia (🇬🇪)",TV4Rustavi
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="trialeti" group-title="Georgia (🇬🇪)",Trialeti TV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="dardimandi" group-title="Georgia (🇬🇪)",Dardimandi
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="agro" group-title="Georgia (🇬🇪)",Agro
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="samefo" group-title="Georgia (🇬🇪)",Samefo Arxi
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="megatv" group-title="Georgia (🇬🇪)",MegaTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="qartuliarxi" group-title="Georgia (🇬🇪)",QartuliArxi
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="musicbox" group-title="Georgia (🇬🇪)",MusicBox Georgia
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="marneuli" group-title="Georgia (🇬🇪)",MarneuliTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="o2" group-title="Georgia (🇬🇪)",O2
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="guria" group-title="Georgia (🇬🇪)",GuriaTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="imervizia" group-title="Georgia (🇬🇪)",Imervizia
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="diatv" group-title="Georgia (🇬🇪)",DiaTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="chveniarxi" group-title="Georgia (🇬🇪)",ChveniArxi
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="batumitv" group-title="Georgia (🇬🇪)",BatumiTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="rcheuli" group-title="Georgia (🇬🇪)",Rcheuli
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="gurjaani" group-title="Georgia (🇬🇪)",Gurjaani
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="molitv" group-title="Georgia (🇬🇪)",MoliTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="agrogaremo" group-title="Georgia (🇬🇪)",AgroGaremo
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="mexute" group-title="Georgia (🇬🇪)",MexuteArxi
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="artv" group-title="Georgia (🇬🇪)",ArTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="meteo24" group-title="Georgia (🇬🇪)",Meteo24
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="georgiantimes" group-title="Georgia (🇬🇪)",GeorgianTimes
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="gms" group-title="Georgia (🇬🇪)",GMS
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="aiatv" group-title="Georgia (🇬🇪)",AiaTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="batumi2" group-title="Georgia (🇬🇪)",Batumi2
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="altinfo" group-title="Georgia (🇬🇪)",AltInfo
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="parliament" group-title="Georgia (🇬🇪)",Parliament
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="mzetv" group-title="Georgia (🇬🇪)",MzeTV
+http://pending.update/stream.m3u8
+
+#EXTINF:-1 tvg-id="egrisi" group-title="Georgia (🇬🇪)",EgrisiTV
+http://pending.update/stream.m3u8
