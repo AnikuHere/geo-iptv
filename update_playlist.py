@@ -83,7 +83,7 @@ MAR_TV_TARGETS = {
     "artv": "https://tv.mar.tv/52",
     "meteo24": "https://tv.mar.tv/56",
     "georgiantimes": "https://tv.mar.tv/57",
-    "silk": "https://tv.mar.tv/155",
+    "silkuniversal": "https://tv.mar.tv/155",
     "rugbytv": "https://tv.mar.tv/160",
     "gms": "https://tv.mar.tv/161",
     "aiatv": "https://tv.mar.tv/992",
@@ -135,8 +135,13 @@ def fetch_mar_tv_streams():
 
                 def handle_request(request):
                     nonlocal captured_stream_url
-                    if ".m3u8" in request.url:
-                        captured_stream_url = request.url
+                    url = request.url
+                    if ".m3u8" in url:
+                        # Prevent tv.mar.tv from defaulting to Pirveli Arxi for paywalled/unauth streams
+                        if channel_id != "pirveliarxi" and ("gpb-1tv" in url or "gpb" in url):
+                            logging.warning(f"  └─ Ignored fallback Pirveli Arxi stream for {channel_id}")
+                            return
+                        captured_stream_url = url
 
                 page.on("request", handle_request)
                 logging.info(f"Scraping {channel_id}...")
