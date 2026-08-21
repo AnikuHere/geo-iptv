@@ -46,12 +46,60 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5",
 }
 
+# Mapping M3U tvg-id tags to their mar.tv page URL
+MAR_TV_TARGETS = {
+    "rustavi2": "https://tv.mar.tv/4",
+    "maestro": "https://tv.mar.tv/5",
+    "marao": "https://tv.mar.tv/12",
+    "gds": "https://tv.mar.tv/13",
+    "comedy": "https://tv.mar.tv/14",
+    "bbb": "https://tv.mar.tv/16",
+    "enkibenki": "https://tv.mar.tv/17",
+    "adjaratv": "https://tv.mar.tv/19",
+    "rionitv": "https://tv.mar.tv/20",
+    "tv25": "https://tv.mar.tv/23",
+    "tv4rustavi": "https://tv.mar.tv/24",
+    "trialeti": "https://tv.mar.tv/25",
+    "dardimandi": "https://tv.mar.tv/27",
+    "agro": "https://tv.mar.tv/28",
+    "samefo": "https://tv.mar.tv/29",
+    "postv": "https://tv.mar.tv/31",
+    "megatv": "https://tv.mar.tv/32",
+    "qartuliarxi": "https://tv.mar.tv/33",
+    "musicbox": "https://tv.mar.tv/34",
+    "marneuli": "https://tv.mar.tv/37",
+    "axaliformula": "https://tv.mar.tv/38",
+    "o2": "https://tv.mar.tv/40",
+    "guria": "https://tv.mar.tv/42",
+    "imervizia": "https://tv.mar.tv/43",
+    "diatv": "https://tv.mar.tv/44",
+    "chveniarxi": "https://tv.mar.tv/45",
+    "batumitv": "https://tv.mar.tv/46",
+    "rcheuli": "https://tv.mar.tv/47",
+    "gurjaani": "https://tv.mar.tv/48",
+    "molitv": "https://tv.mar.tv/49",
+    "mexute": "https://tv.mar.tv/50",
+    "agrogaremo": "https://tv.mar.tv/51",
+    "artv": "https://tv.mar.tv/52",
+    "meteo24": "https://tv.mar.tv/56",
+    "georgiantimes": "https://tv.mar.tv/57",
+    "silk": "https://tv.mar.tv/155",
+    "rugbytv": "https://tv.mar.tv/160",
+    "gms": "https://tv.mar.tv/161",
+    "aiatv": "https://tv.mar.tv/992",
+    "batumi2": "https://tv.mar.tv/994",
+    "altinfo": "https://tv.mar.tv/996",
+    "parliament": "https://tv.mar.tv/997",
+    "egrisi": "https://tv.mar.tv/998",
+    "mzetv": "https://tv.mar.tv/999"
+}
+
 def log_detailed_error(source_name, friendly_msg, raw_code_msg, snippet=None):
     logging.error(f"[{source_name} FAILURE]")
-    logging.error(f"  └─ Reason (Human Readable): {friendly_msg}")
-    logging.error(f"  └─ Error Output / Raw Code: {raw_code_msg}")
+    logging.error(f"  └─ Reason: {friendly_msg}")
+    logging.error(f"  └─ Error Output: {raw_code_msg}")
     if snippet:
-        logging.error(f"  └─ Source Body Snippet: {snippet}")
+        logging.error(f"  └─ Snippet: {snippet}")
 
 def fetch_setanta_block():
     logging.info("Fetching Setanta Sports 3 from IPTV-ORG...")
@@ -64,111 +112,93 @@ def fetch_setanta_block():
         match = re.search(pattern, content)
         if match:
             block = match.group(1).strip()
-            logging.info("Setanta block retrieved successfully.")
             return re.sub(r'tvg-id="[^"]+"', 'tvg-id="setanta3"', block)
         else:
-            snippet = content[:200].replace('\n', ' ').strip()
-            log_detailed_error(
-                "Setanta",
-                "Channel block missing from remote playlist (IPTV-ORG layout updated or channel removed).",
-                f"Regex Pattern Match Failed | Remote Payload Length: {len(content)} chars",
-                snippet=snippet
-            )
+            log_detailed_error("Setanta", "Channel block missing", "Regex Pattern Match Failed")
             return None
-
-    except urllib.error.HTTPError as e:
-        log_detailed_error("Setanta", "HTTP Request Denied / Server Error", f"HTTPError {e.code}: {e.reason}")
-    except urllib.error.URLError as e:
-        log_detailed_error("Setanta", "Connection Failed / Network Blocked", f"URLError: {e.reason}")
-    except TimeoutError:
-        log_detailed_error("Setanta", "Request Timed Out", "TimeoutError: Request exceeded 15 second limit")
     except Exception as e:
         log_detailed_error("Setanta", "Unexpected Execution Error", f"{type(e).__name__}: {str(e)}")
-        
     return None
 
-def generate_gds_link():
-    logging.info("Launching Chromium instance to capture GDS network requests...")
-    captured_stream_url = None
-    page_url = "https://tv.mar.tv/13"
+def fetch_mar_tv_streams():
+    logging.info(f"Launching batch scraper for {len(MAR_TV_TARGETS)} channels on tv.mar.tv...")
+    scraped_urls = {}
 
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(user_agent=HEADERS["User-Agent"])
-            page = context.new_page()
+            
+            for channel_id, page_url in MAR_TV_TARGETS.items():
+                captured_stream_url = None
+                page = context.new_page()
 
-            def handle_request(request):
-                nonlocal captured_stream_url
-                url = request.url
-                if ".m3u8" in url:
-                    logging.info(f"Intercepted m3u8 request: {url}")
-                    captured_stream_url = url
+                def handle_request(request):
+                    nonlocal captured_stream_url
+                    if ".m3u8" in request.url:
+                        captured_stream_url = request.url
 
-            page.on("request", handle_request)
+                page.on("request", handle_request)
+                logging.info(f"Scraping {channel_id}...")
 
-            try:
-                page.goto(page_url, wait_until="domcontentloaded", timeout=25000)
-                page.wait_for_timeout(5000)  # Allow JS video player time to request stream
-            except Exception as e:
-                logging.warning(f"Browser navigation notice: {e}")
+                try:
+                    page.goto(page_url, wait_until="domcontentloaded", timeout=15000)
+                    page.wait_for_timeout(3000)  # Wait for JS player to request stream
+                except Exception as e:
+                    log_detailed_error(channel_id, f"Browser timed out or failed to load.", str(e))
+                
+                page.close()
+
+                if captured_stream_url:
+                    logging.info(f" -> Success: {captured_stream_url}")
+                    scraped_urls[channel_id] = captured_stream_url
+                else:
+                    log_detailed_error(channel_id, "No .m3u8 network request detected.", "PlaywrightNetworkListenerError")
 
             browser.close()
-
-        if captured_stream_url:
-            logging.info(f"Successfully extracted GDS stream URL: {captured_stream_url}")
-            return captured_stream_url
-        else:
-            log_detailed_error(
-                "GDS",
-                "No .m3u8 network request detected during browser session.",
-                "PlaywrightNetworkListenerError | 0 .m3u8 requests captured during page load window."
-            )
-            return None
-
     except Exception as e:
-        log_detailed_error("GDS", "Headless Browser Execution Failed", f"PlaywrightError: {type(e).__name__}: {str(e)}")
-        return None
+        logging.error(f"Critical browser setup failure: {e}")
+        
+    return scraped_urls
 
 def update_my_playlist():
     setanta_block = fetch_setanta_block()
-    new_gds_url = generate_gds_link()
-
-    if not setanta_block and not new_gds_url:
-        logging.error("CRITICAL: Failed to retrieve updates for both streams. Exiting with error.")
-        sys.exit(1)
+    mar_tv_streams = fetch_mar_tv_streams()
 
     try:
         with open(MY_M3U_FILE, 'r', encoding='utf-8') as f:
             my_content = f.read()
     except FileNotFoundError as e:
-        log_detailed_error("M3U Local File", "Target playlist file missing in local repository path.", f"FileNotFoundError: {e}")
+        logging.error(f"Target playlist missing: {e}")
         sys.exit(1)
 
     updated = False
 
+    # Inject Setanta
     if setanta_block:
         existing_setanta = r'#EXTINF:-1 tvg-id="setanta3"[^\n]*\n(?:#EXTVLCOPT:[^\n]*\n)?[^\n]+'
         if re.search(existing_setanta, my_content):
             my_content = re.sub(existing_setanta, setanta_block, my_content)
             updated = True
-            logging.info("Updated Setanta entry in playlist.")
 
-    if new_gds_url:
-        gds_pattern = r'(#EXTINF:-1 tvg-id="gds"[^\n]*\n)[^\n]+'
-        if re.search(gds_pattern, my_content):
-            my_content = re.sub(gds_pattern, r'\g<1>' + new_gds_url, my_content)
+    # Inject Mar.tv streams dynamically based on tvg-id
+    for channel_id, stream_url in mar_tv_streams.items():
+        pattern = rf'(#EXTINF:-1 tvg-id="{channel_id}"[^\n]*\n(?:#EXTVLCOPT:[^\n]*\n)*)[^\n]+'
+        if re.search(pattern, my_content):
+            my_content = re.sub(pattern, rf'\g<1>{stream_url}', my_content)
             updated = True
-            logging.info("Updated GDS entry in playlist.")
+            logging.info(f"Updated M3U block for: {channel_id}")
+        else:
+            logging.warning(f"Failed to find tvg-id=\"{channel_id}\" in {MY_M3U_FILE}")
 
     if updated:
         with open(MY_M3U_FILE, 'w', encoding='utf-8') as f:
             f.write(my_content)
         logging.info(f"Saved changes to {MY_M3U_FILE}.")
     else:
-        logging.info("Playlist already up to date. No file changes needed.")
+        logging.info("No file changes were made.")
 
 if __name__ == "__main__":
-    logging.info(f"=== UPDATE EXECUTION STARTED (Log: {os.path.basename(LOG_FILE)}) ===")
+    logging.info(f"=== UPDATE EXECUTION STARTED ===")
     update_my_playlist()
     logging.info("=== UPDATE EXECUTION FINISHED ===")
