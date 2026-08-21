@@ -23,13 +23,13 @@ https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8
 https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8
 
 #EXTINF:-1 tvg-id="axaliformula" group-title="Georgia (🇬🇪)",Axali Formula
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/axaliformla/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/axaliformla/index.m3u8
 
 #EXTINF:-1 tvg-id="gds" group-title="Georgia (🇬🇪)",GDS TV
-https://live1.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/13sd/index.m3u8
+https://live1.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/13sd/index.m3u8
 
 #EXTINF:-1 tvg-id="silkuniversal" group-title="Georgia (🇬🇪)",SilkUniversalHD
-https://live2.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/1arxiweb/index.m3u8
+https://live2.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/1arxiweb/index.m3u8
 
 #EXTINF:-1 tvg-id="setanta3",Setanta Sports 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
@@ -42,13 +42,13 @@ http://nue01-edge01.itdc.ge/pirvelitv/mpegts
 http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
 
 #EXTINF:-1 tvg-id="comedy" group-title="Georgia (🇬🇪)",Comedy TV
-https://live4.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/14rd/index.m3u8
+https://live4.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/14rd/index.m3u8
 
 #EXTINF:-1 tvg-id="maestro" group-title="Georgia (🇬🇪)",Maestro
-https://live4.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/352m/index.m3u8
+https://live4.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/352m/index.m3u8
 
 #EXTINF:-1 tvg-id="tv25" group-title="Georgia (🇬🇪)",TV25
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/23tv25/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/23tv25/index.m3u8
 
 #EXTINF:-1 tvg-id="ertsulovaneba" group-title="Georgia (🇬🇪)",Ertsulovaneba
 https://stream.sstv.ge/live/sstv/playlist.m3u8
@@ -90,10 +90,10 @@ https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
 https://streaming-hls3.televizia.org/hls/kavkasia.m3u8
 
 #EXTINF:-1 tvg-id="rugbytv" group-title="Georgia (🇬🇪)",RugbyTV
-https://live4.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/160m/index.m3u8
+https://live4.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/160m/index.m3u8
 
 #EXTINF:-1 tvg-id="postv" tvg-logo="https://yt3.googleusercontent.com/W2Krl3yrq4T0DWDMXhcuk-jFTP5m1wUpcO_b11WNbNBiYY4lw5w8olUCuqJM7q_olPfhFeD1-A=s160-c-k-c0x00ffffff-no-rj" group-title="Georgia (🇬🇪)",POSTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/postvw/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/postvw/index.m3u8
 
 #EXTINF:-1 tvg-id="obieqtivitv" group-title="Georgia (🇬🇪)",Obieqtivi TV
 https://live20.bozztv.com/dvrfl05/gin-obieqtivitv/index.m3u8
@@ -105,13 +105,13 @@ http://31.146.5.178:8087/play/a009/index.m3u8
 https://live20.bozztv.com/dvrfl05/gin-adjara/index.m3u8
 
 #EXTINF:-1 tvg-id="adjaratv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/ADJARA_TV_LOGO_2016.png/250px-ADJARA_TV_LOGO_2016.png" group-title="Georgia (🇬🇪)",AdjaraTV
-https://live2.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/19rd/index.m3u8
+https://live2.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/19rd/index.m3u8
 
 #EXTINF:-1 tvg-id="marao" group-title="Georgia (🇬🇪)",Marao
-https://live2.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/12sd/index.m3u8
+https://live2.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/12sd/index.m3u8
 
 #EXTINF:-1 tvg-id="rionitv" group-title="Georgia (🇬🇪)",Rioni TV (720p) [Not 24/7]
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/20rionn/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/20rionn/index.m3u8
 
 #EXTINF:-1 tvg-id="palitratv" group-title="Georgia (🇬🇪)",Palitra News (480p) [Not 24/7]
 https://live.palitranews.ge/hls/palitratv/index.m3u8
@@ -123,97 +123,97 @@ https://livestream.palitra.ge/hls/palitratv/index.m3u8
 https://live20.bozztv.com/dvrfl05/gin-mtavariarxi/index.m3u8
 
 #EXTINF:-1 tvg-id="bbb" group-title="Georgia (🇬🇪)",BBB
-https://live2.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/16sd/index.m3u8
+https://live2.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/16sd/index.m3u8
 
 #EXTINF:-1 tvg-id="enkibenki" group-title="Georgia (🇬🇪)",EnkiBenki
-https://live2.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/17e/index.m3u8
+https://live2.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/17e/index.m3u8
 
 #EXTINF:-1 tvg-id="tv4rustavi" group-title="Georgia (🇬🇪)",TV4Rustavi
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/24tw4/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/24tw4/index.m3u8
 
 #EXTINF:-1 tvg-id="trialeti" group-title="Georgia (🇬🇪)",Trialeti TV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/trialleti/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/trialleti/index.m3u8
 
 #EXTINF:-1 tvg-id="dardimandi" group-title="Georgia (🇬🇪)",Dardimandi
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/27/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/27/index.m3u8
 
 #EXTINF:-1 tvg-id="agro" group-title="Georgia (🇬🇪)",Agro
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/28/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/28/index.m3u8
 
 #EXTINF:-1 tvg-id="samefo" group-title="Georgia (🇬🇪)",Samefo Arxi
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/29/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/29/index.m3u8
 
 #EXTINF:-1 tvg-id="megatv" group-title="Georgia (🇬🇪)",MegaTV
-https://live4.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/32st/index.m3u8
+https://live4.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/32st/index.m3u8
 
 #EXTINF:-1 tvg-id="qartuliarxi" group-title="Georgia (🇬🇪)",QartuliArxi
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/qartuli/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/qartuli/index.m3u8
 
 #EXTINF:-1 tvg-id="musicbox" group-title="Georgia (🇬🇪)",MusicBox Georgia
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/34musge/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/34musge/index.m3u8
 
 #EXTINF:-1 tvg-id="marneuli" group-title="Georgia (🇬🇪)",MarneuliTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/37marn/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/37marn/index.m3u8
 
 #EXTINF:-1 tvg-id="o2" group-title="Georgia (🇬🇪)",O2
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/40/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/40/index.m3u8
 
 #EXTINF:-1 tvg-id="guria" group-title="Georgia (🇬🇪)",GuriaTV
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/42/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/42/index.m3u8
 
 #EXTINF:-1 tvg-id="imervizia" group-title="Georgia (🇬🇪)",Imervizia
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/imervizia/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/imervizia/index.m3u8
 
 #EXTINF:-1 tvg-id="diatv" group-title="Georgia (🇬🇪)",DiaTV
-https://live4.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/dia/index.m3u8
+https://live4.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/dia/index.m3u8
 
 #EXTINF:-1 tvg-id="chveniarxi" group-title="Georgia (🇬🇪)",ChveniArxi
-https://live3.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/45rd/index.m3u8
+https://live3.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/45rd/index.m3u8
 
 #EXTINF:-1 tvg-id="batumitv" group-title="Georgia (🇬🇪)",BatumiTV
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/46/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/46/index.m3u8
 
 #EXTINF:-1 tvg-id="rcheuli" group-title="Georgia (🇬🇪)",Rcheuli
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/47/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/47/index.m3u8
 
 #EXTINF:-1 tvg-id="gurjaani" group-title="Georgia (🇬🇪)",Gurjaani
-https://live4.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/48m/index.m3u8
+https://live4.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/48m/index.m3u8
 
 #EXTINF:-1 tvg-id="molitv" group-title="Georgia (🇬🇪)",MoliTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/mollltv/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/mollltv/index.m3u8
 
 #EXTINF:-1 tvg-id="agrogaremo" group-title="Georgia (🇬🇪)",AgroGaremo
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/agrogaremo/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/agrogaremo/index.m3u8
 
 #EXTINF:-1 tvg-id="mexute" group-title="Georgia (🇬🇪)",MexuteArxi
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/50/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/50/index.m3u8
 
 #EXTINF:-1 tvg-id="artv" group-title="Georgia (🇬🇪)",ArTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/tafutv/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/tafutv/index.m3u8
 
 #EXTINF:-1 tvg-id="meteo24" group-title="Georgia (🇬🇪)",Meteo24
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/56/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/56/index.m3u8
 
 #EXTINF:-1 tvg-id="georgiantimes" group-title="Georgia (🇬🇪)",GeorgianTimes
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/57/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/57/index.m3u8
 
 #EXTINF:-1 tvg-id="gms" group-title="Georgia (🇬🇪)",GMS
-https://live5.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/161/index.m3u8
+https://live5.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/161/index.m3u8
 
 #EXTINF:-1 tvg-id="aiatv" group-title="Georgia (🇬🇪)",AiaTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/aia/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/aia/index.m3u8
 
 #EXTINF:-1 tvg-id="batumi2" group-title="Georgia (🇬🇪)",Batumi2
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/batumitv2/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/batumitv2/index.m3u8
 
 #EXTINF:-1 tvg-id="altinfo" group-title="Georgia (🇬🇪)",AltInfo
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/altinfo/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/altinfo/index.m3u8
 
 #EXTINF:-1 tvg-id="parliament" group-title="Georgia (🇬🇪)",Parliament
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/parlament/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/parlament/index.m3u8
 
 #EXTINF:-1 tvg-id="mzetv" group-title="Georgia (🇬🇪)",MzeTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/mze/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/mze/index.m3u8
 
 #EXTINF:-1 tvg-id="egrisi" group-title="Georgia (🇬🇪)",EgrisiTV
-https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/egrisi/index.m3u8
+https://live6.mar.tv/f5bbe282673b494c0337c42603b8ef36ca839b909cef85ba836da0ba87bdf142/egrisi/index.m3u8
