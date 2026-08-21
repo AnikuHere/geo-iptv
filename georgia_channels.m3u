@@ -28,7 +28,7 @@ https://live6.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d4
 #EXTINF:-1 tvg-id="gds" group-title="Georgia (🇬🇪)",GDS TV
 https://live1.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/13sd/index.m3u8
 
-#EXTINF:-1 tvg-id="silk" group-title="Georgia (🇬🇪)",SilkUniversalHD
+#EXTINF:-1 tvg-id="silkuniversal" group-title="Georgia (🇬🇪)",SilkUniversalHD
 https://live2.mar.tv/765c29fa061d7d7ec482445b90c2459a62bc3afc0cc50d171cd957610d40c379/1arxiweb/index.m3u8
 
 #EXTINF:-1 tvg-id="setanta3",Setanta Sports 3
