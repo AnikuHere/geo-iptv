@@ -9,18 +9,15 @@ import urllib.error
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
-# 1. ENFORCE ABSOLUTE PATHS
-# This guarantees files are created EXACTLY where this Python file is located,
-# preventing them from vanishing into random system folders during automated runs.
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-LOG_DIR = os.path.join(SCRIPT_DIR, "logs", "logsnewstyle")
-MY_M3U_FILE = os.path.join(SCRIPT_DIR, "georgia_channels.m3u")
+# 1. EXACT DIRECTORY PATH REQUESTED
+LOG_DIR = os.path.join("logs_updater", "logsnewstyle")
+MY_M3U_FILE = "georgia_channels.m3u"
 
 # 2. FAIL-SAFE INITIALIZATION
 try:
     os.makedirs(LOG_DIR, exist_ok=True)
 except Exception as e:
-    print(f"CRITICAL BOOT ERROR: Could not create log directory! {e}", file=sys.stderr)
+    print(f"CRITICAL BOOT ERROR: Could not create log directory '{LOG_DIR}'! {e}", file=sys.stderr)
     sys.exit(1)
 
 def get_log_filename(directory):
@@ -32,7 +29,7 @@ def get_log_filename(directory):
 LOG_FILE = get_log_filename(LOG_DIR)
 
 try:
-    # ASCII-only logging to prevent UnicodeEncodeError crashes in headless environments
+    # ASCII-only logging to prevent crashes in headless environments
     logging.basicConfig(
         level=logging.DEBUG,
         format="%(asctime)s [%(levelname)s] [%(name)s] %(message)s",
