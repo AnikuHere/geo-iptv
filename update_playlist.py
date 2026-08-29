@@ -46,7 +46,6 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.5",
 }
 
-# Mapping M3U tvg-id tags to their mar.tv page URL
 MAR_TV_TARGETS = {
     "rustavi2": "https://tv.mar.tv/4",
     "maestro": "https://tv.mar.tv/5",
@@ -126,8 +125,18 @@ def fetch_mar_tv_streams():
 
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(user_agent=HEADERS["User-Agent"])
+            browser = p.chromium.launch(
+                headless=True,
+                args=[
+                    "--autoplay-policy=no-user-gesture-required",
+                    "--disable-web-security",
+                    "--disable-features=IsolateOrigins,site-per-process"
+                ]
+            )
+            context = browser.new_context(
+                user_agent=HEADERS["User-Agent"],
+                viewport={"width": 1280, "height": 720}
+            )
             
             for channel_id, page_url in MAR_TV_TARGETS.items():
                 captured_stream_url = None
@@ -137,7 +146,6 @@ def fetch_mar_tv_streams():
                     nonlocal captured_stream_url
                     url = request.url
                     if ".m3u8" in url:
-                        # Prevent tv.mar.tv from defaulting to Pirveli Arxi for paywalled/unauth streams
                         if channel_id != "pirveliarxi" and ("gpb-1tv" in url or "gpb" in url):
                             logging.warning(f"  └─ Ignored fallback Pirveli Arxi stream for {channel_id}")
                             return
@@ -148,9 +156,22 @@ def fetch_mar_tv_streams():
 
                 try:
                     page.goto(page_url, wait_until="domcontentloaded", timeout=15000)
-                    page.wait_for_timeout(3000)  # Wait for JS player to request stream
+                    
+                    page.mouse.click(640, 360)
+                    
+                    selectors = ["video", ".play-btn", "#player", "iframe"]
+                    for selector in selectors:
+                        if page.locator(selector).count() > 0:
+                            try:
+                                page.locator(selector).first.click(force=True, timeout=1000)
+                                break
+                            except Exception:
+                                pass
+                            
+                    page.wait_for_timeout(5000)
+
                 except Exception as e:
-                    log_detailed_error(channel_id, f"Browser timed out or failed to load.", str(e))
+                    log_detailed_error(channel_id, "Browser interaction failed or timed out.", str(e))
                 
                 page.close()
 
@@ -179,14 +200,12 @@ def update_my_playlist():
 
     updated = False
 
-    # Inject Setanta
     if setanta_block:
         existing_setanta = r'#EXTINF:-1 tvg-id="setanta3"[^\n]*\n(?:#EXTVLCOPT:[^\n]*\n)?[^\n]+'
         if re.search(existing_setanta, my_content):
             my_content = re.sub(existing_setanta, setanta_block, my_content)
             updated = True
 
-    # Inject Mar.tv streams dynamically based on tvg-id
     for channel_id, stream_url in mar_tv_streams.items():
         pattern = rf'(#EXTINF:-1 tvg-id="{channel_id}"[^\n]*\n(?:#EXTVLCOPT:[^\n]*\n)*)[^\n]+'
         if re.search(pattern, my_content):
