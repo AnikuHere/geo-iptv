@@ -1,0 +1,1690 @@
+2026-08-29 20:00:41,253 [INFO] [root] ================================================================================
+2026-08-29 20:00:41,253 [INFO] [root] === SCRIPT EXECUTION STARTED AT 2026-08-29 20:00:41 ===
+2026-08-29 20:00:41,254 [INFO] [root] === LOG TARGET: logs_updater/logsnewstyle/1_2026-08-29_20-00-41.log ===
+2026-08-29 20:00:41,254 [INFO] [root] ================================================================================
+2026-08-29 20:00:41,254 [INFO] [root] ---> [STEP] Fetching Setanta Sports 3 from IPTV-ORG...
+2026-08-29 20:00:41,254 [DEBUG] [root] HTTP GET Request target: https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ge.m3u
+2026-08-29 20:00:41,325 [DEBUG] [root] Received HTTP response status 200, content length: 2798 bytes
+2026-08-29 20:00:41,326 [INFO] [root] Successfully extracted Setanta Sports 3 block.
+2026-08-29 20:00:41,326 [INFO] [root] ---> [STEP] Launching batch Playwright scraper for 44 channels...
+2026-08-29 20:00:41,326 [DEBUG] [asyncio] Using selector: EpollSelector
+2026-08-29 20:00:41,647 [DEBUG] [root] Launching Playwright Chromium instance with anti-detection flags...
+2026-08-29 20:00:42,862 [INFO] [root] Processing channel [rustavi2] -> https://tv.mar.tv/4
+2026-08-29 20:00:42,907 [DEBUG] [root] [rustavi2] Navigating page...
+2026-08-29 20:00:44,844 [DEBUG] [root] [rustavi2] Page loaded with status: 200
+2026-08-29 20:00:46,846 [DEBUG] [root] [rustavi2] Performing force mouse click at (640, 360)
+2026-08-29 20:00:46,849 [DEBUG] [root] [rustavi2] Found 1 frames on target page
+2026-08-29 20:00:46,850 [DEBUG] [root] [rustavi2] Inspecting frame #0: https://tv.mar.tv/4
+2026-08-29 20:00:46,874 [DEBUG] [root] [rustavi2] Triggering click on 'video' inside frame #0
+2026-08-29 20:00:50,964 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_rustavi2.png
+2026-08-29 20:00:50,965 [ERROR] [root] ================================================================================
+2026-08-29 20:00:50,965 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: rustavi2]
+2026-08-29 20:00:50,965 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:00:50,965 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:00:50,965 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:00:50,965 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:00:50,965 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:00:50,965 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/4
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1733339207&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F4&dp=%2F4&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=IEBAAEABAAAAACAAI~&jid=1424086164&gjid=168017955&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_r=1&_slc=1&z=1538325771
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033644873&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAI&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=16&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118012008~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F4&dp=%2F4&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=0&en=page_view&_fv=1&_ss=1&_ee=1&tfd=2148
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5641.772642080386+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F4+DEPT:24
+2026-08-29 20:00:50,965 [ERROR] [root] ================================================================================
+2026-08-29 20:00:50,970 [INFO] [root] Processing channel [maestro] -> https://tv.mar.tv/5
+2026-08-29 20:00:51,005 [DEBUG] [root] [maestro] Navigating page...
+2026-08-29 20:00:51,279 [DEBUG] [root] [maestro] Page loaded with status: 200
+2026-08-29 20:00:53,281 [DEBUG] [root] [maestro] Performing force mouse click at (640, 360)
+2026-08-29 20:00:53,285 [DEBUG] [root] [maestro] Found 1 frames on target page
+2026-08-29 20:00:53,285 [DEBUG] [root] [maestro] Inspecting frame #0: https://tv.mar.tv/5
+2026-08-29 20:00:53,304 [DEBUG] [root] [maestro] Triggering click on 'video' inside frame #0
+2026-08-29 20:00:57,363 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_maestro.png
+2026-08-29 20:00:57,363 [ERROR] [root] ================================================================================
+2026-08-29 20:00:57,363 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: maestro]
+2026-08-29 20:00:57,363 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:00:57,363 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:00:57,363 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:00:57,363 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:00:57,363 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:00:57,363 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/5
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=476573833&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F5&dp=%2F5&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=539268755
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3628.5235579026653+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F5+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033651307&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=17&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120763598&dl=https%3A%2F%2Ftv.mar.tv%2F5&dp=%2F5&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5378
+2026-08-29 20:00:57,363 [ERROR] [root] ================================================================================
+2026-08-29 20:00:57,367 [INFO] [root] Processing channel [marao] -> https://tv.mar.tv/12
+2026-08-29 20:00:57,404 [DEBUG] [root] [marao] Navigating page...
+2026-08-29 20:00:57,672 [DEBUG] [root] [marao] Page loaded with status: 200
+2026-08-29 20:00:59,673 [DEBUG] [root] [marao] Performing force mouse click at (640, 360)
+2026-08-29 20:00:59,676 [DEBUG] [root] [marao] Found 1 frames on target page
+2026-08-29 20:00:59,677 [DEBUG] [root] [marao] Inspecting frame #0: https://tv.mar.tv/12
+2026-08-29 20:00:59,697 [DEBUG] [root] [marao] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:03,763 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_marao.png
+2026-08-29 20:01:03,763 [ERROR] [root] ================================================================================
+2026-08-29 20:01:03,763 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: marao]
+2026-08-29 20:01:03,763 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:03,763 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:03,763 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:03,763 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:03,763 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:03,764 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/12
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1366036366&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F12&dp=%2F12&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1568290459
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:240.64530642093462+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F12+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033657701&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F12&dp=%2F12&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5375
+2026-08-29 20:01:03,764 [ERROR] [root] ================================================================================
+2026-08-29 20:01:03,767 [INFO] [root] Processing channel [gds] -> https://tv.mar.tv/13
+2026-08-29 20:01:03,800 [DEBUG] [root] [gds] Navigating page...
+2026-08-29 20:01:04,072 [DEBUG] [root] [gds] Page loaded with status: 200
+2026-08-29 20:01:06,073 [DEBUG] [root] [gds] Performing force mouse click at (640, 360)
+2026-08-29 20:01:06,077 [DEBUG] [root] [gds] Found 1 frames on target page
+2026-08-29 20:01:06,077 [DEBUG] [root] [gds] Inspecting frame #0: https://tv.mar.tv/13
+2026-08-29 20:01:06,096 [DEBUG] [root] [gds] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:10,145 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_gds.png
+2026-08-29 20:01:10,145 [ERROR] [root] ================================================================================
+2026-08-29 20:01:10,145 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: gds]
+2026-08-29 20:01:10,145 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:10,145 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:10,145 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:10,145 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:10,145 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:10,145 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/13
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1438320561&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F13&dp=%2F13&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1053730122
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:1495.6840233768075+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F13+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033664099&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F13&dp=%2F13&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5381
+2026-08-29 20:01:10,145 [ERROR] [root] ================================================================================
+2026-08-29 20:01:10,148 [INFO] [root] Processing channel [comedy] -> https://tv.mar.tv/14
+2026-08-29 20:01:10,180 [DEBUG] [root] [comedy] Navigating page...
+2026-08-29 20:01:10,444 [DEBUG] [root] [comedy] Page loaded with status: 200
+2026-08-29 20:01:12,445 [DEBUG] [root] [comedy] Performing force mouse click at (640, 360)
+2026-08-29 20:01:12,448 [DEBUG] [root] [comedy] Found 1 frames on target page
+2026-08-29 20:01:12,449 [DEBUG] [root] [comedy] Inspecting frame #0: https://tv.mar.tv/14
+2026-08-29 20:01:12,468 [DEBUG] [root] [comedy] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:16,529 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_comedy.png
+2026-08-29 20:01:16,529 [ERROR] [root] ================================================================================
+2026-08-29 20:01:16,529 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: comedy]
+2026-08-29 20:01:16,529 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:16,529 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:16,529 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:16,529 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:16,529 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:16,529 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/14
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1366633939&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F14&dp=%2F14&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=42619297
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:801.8750263735664+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F14+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033670474&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=2&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F14&dp=%2F14&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:01:16,529 [ERROR] [root] ================================================================================
+2026-08-29 20:01:16,532 [INFO] [root] Processing channel [bbb] -> https://tv.mar.tv/16
+2026-08-29 20:01:16,575 [DEBUG] [root] [bbb] Navigating page...
+2026-08-29 20:01:16,840 [DEBUG] [root] [bbb] Page loaded with status: 200
+2026-08-29 20:01:18,843 [DEBUG] [root] [bbb] Performing force mouse click at (640, 360)
+2026-08-29 20:01:18,846 [DEBUG] [root] [bbb] Found 1 frames on target page
+2026-08-29 20:01:18,846 [DEBUG] [root] [bbb] Inspecting frame #0: https://tv.mar.tv/16
+2026-08-29 20:01:18,865 [DEBUG] [root] [bbb] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:22,912 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_bbb.png
+2026-08-29 20:01:22,912 [ERROR] [root] ================================================================================
+2026-08-29 20:01:22,912 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: bbb]
+2026-08-29 20:01:22,912 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:22,912 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:22,912 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:22,912 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:22,912 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:22,912 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/16
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=20200211&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F16&dp=%2F16&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1105982595
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:8788.693143963988+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F16+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033676868&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F16&dp=%2F16&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5380
+2026-08-29 20:01:22,912 [ERROR] [root] ================================================================================
+2026-08-29 20:01:22,916 [INFO] [root] Processing channel [enkibenki] -> https://tv.mar.tv/17
+2026-08-29 20:01:22,948 [DEBUG] [root] [enkibenki] Navigating page...
+2026-08-29 20:01:23,216 [DEBUG] [root] [enkibenki] Page loaded with status: 200
+2026-08-29 20:01:25,218 [DEBUG] [root] [enkibenki] Performing force mouse click at (640, 360)
+2026-08-29 20:01:25,221 [DEBUG] [root] [enkibenki] Found 1 frames on target page
+2026-08-29 20:01:25,221 [DEBUG] [root] [enkibenki] Inspecting frame #0: https://tv.mar.tv/17
+2026-08-29 20:01:25,241 [DEBUG] [root] [enkibenki] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:29,294 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_enkibenki.png
+2026-08-29 20:01:29,294 [ERROR] [root] ================================================================================
+2026-08-29 20:01:29,294 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: enkibenki]
+2026-08-29 20:01:29,294 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:29,294 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:29,294 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:29,294 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:29,294 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:29,294 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/17
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=108372571&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F17&dp=%2F17&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1579767532
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3248.9025597485133+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F17+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033683244&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=16&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F17&dp=%2F17&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:01:29,295 [ERROR] [root] ================================================================================
+2026-08-29 20:01:29,298 [INFO] [root] Processing channel [adjaratv] -> https://tv.mar.tv/19
+2026-08-29 20:01:29,329 [DEBUG] [root] [adjaratv] Navigating page...
+2026-08-29 20:01:29,599 [DEBUG] [root] [adjaratv] Page loaded with status: 200
+2026-08-29 20:01:31,603 [DEBUG] [root] [adjaratv] Performing force mouse click at (640, 360)
+2026-08-29 20:01:31,606 [DEBUG] [root] [adjaratv] Found 1 frames on target page
+2026-08-29 20:01:31,606 [DEBUG] [root] [adjaratv] Inspecting frame #0: https://tv.mar.tv/19
+2026-08-29 20:01:31,626 [DEBUG] [root] [adjaratv] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:35,676 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_adjaratv.png
+2026-08-29 20:01:35,676 [ERROR] [root] ================================================================================
+2026-08-29 20:01:35,677 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: adjaratv]
+2026-08-29 20:01:35,677 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:35,677 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:35,677 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:35,677 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:35,677 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:35,677 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/19
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=8541391&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F19&dp=%2F19&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=772840917
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:7392.755524409187+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F19+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033689631&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=4&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~119259605~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F19&dp=%2F19&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5386
+2026-08-29 20:01:35,677 [ERROR] [root] ================================================================================
+2026-08-29 20:01:35,682 [INFO] [root] Processing channel [rionitv] -> https://tv.mar.tv/20
+2026-08-29 20:01:35,712 [DEBUG] [root] [rionitv] Navigating page...
+2026-08-29 20:01:35,980 [DEBUG] [root] [rionitv] Page loaded with status: 200
+2026-08-29 20:01:37,981 [DEBUG] [root] [rionitv] Performing force mouse click at (640, 360)
+2026-08-29 20:01:37,985 [DEBUG] [root] [rionitv] Found 1 frames on target page
+2026-08-29 20:01:37,985 [DEBUG] [root] [rionitv] Inspecting frame #0: https://tv.mar.tv/20
+2026-08-29 20:01:38,004 [DEBUG] [root] [rionitv] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:42,060 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_rionitv.png
+2026-08-29 20:01:42,061 [ERROR] [root] ================================================================================
+2026-08-29 20:01:42,061 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: rionitv]
+2026-08-29 20:01:42,061 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:42,061 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:42,061 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:42,061 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:42,061 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:42,061 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/20
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=402566477&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F20&dp=%2F20&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1884847146
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5708.397642495746+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F20+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033696007&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=19&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~119791748~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F20&dp=%2F20&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5377
+2026-08-29 20:01:42,061 [ERROR] [root] ================================================================================
+2026-08-29 20:01:42,064 [INFO] [root] Processing channel [tv25] -> https://tv.mar.tv/23
+2026-08-29 20:01:42,097 [DEBUG] [root] [tv25] Navigating page...
+2026-08-29 20:01:42,362 [DEBUG] [root] [tv25] Page loaded with status: 200
+2026-08-29 20:01:44,363 [DEBUG] [root] [tv25] Performing force mouse click at (640, 360)
+2026-08-29 20:01:44,367 [DEBUG] [root] [tv25] Found 1 frames on target page
+2026-08-29 20:01:44,367 [DEBUG] [root] [tv25] Inspecting frame #0: https://tv.mar.tv/23
+2026-08-29 20:01:44,386 [DEBUG] [root] [tv25] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:48,444 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_tv25.png
+2026-08-29 20:01:48,444 [ERROR] [root] ================================================================================
+2026-08-29 20:01:48,444 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: tv25]
+2026-08-29 20:01:48,444 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:48,445 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:48,445 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:48,445 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:48,445 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:48,445 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/23
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=298729152&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F23&dp=%2F23&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=920054613
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:4303.272874636777+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F23+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033702389&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=11&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F23&dp=%2F23&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:01:48,445 [ERROR] [root] ================================================================================
+2026-08-29 20:01:48,448 [INFO] [root] Processing channel [tv4rustavi] -> https://tv.mar.tv/24
+2026-08-29 20:01:48,481 [DEBUG] [root] [tv4rustavi] Navigating page...
+2026-08-29 20:01:48,745 [DEBUG] [root] [tv4rustavi] Page loaded with status: 200
+2026-08-29 20:01:50,748 [DEBUG] [root] [tv4rustavi] Performing force mouse click at (640, 360)
+2026-08-29 20:01:50,752 [DEBUG] [root] [tv4rustavi] Found 1 frames on target page
+2026-08-29 20:01:50,752 [DEBUG] [root] [tv4rustavi] Inspecting frame #0: https://tv.mar.tv/24
+2026-08-29 20:01:50,771 [DEBUG] [root] [tv4rustavi] Triggering click on 'video' inside frame #0
+2026-08-29 20:01:54,826 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_tv4rustavi.png
+2026-08-29 20:01:54,826 [ERROR] [root] ================================================================================
+2026-08-29 20:01:54,826 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: tv4rustavi]
+2026-08-29 20:01:54,826 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:01:54,826 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:01:54,826 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:01:54,826 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:01:54,826 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:01:54,827 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/24
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1158172349&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F24&dp=%2F24&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=777804892&gjid=141527992&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_r=1&_slc=1&z=458903623
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:4795.473933417907+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F24+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033708772&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=19&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~119259605~120213116~120385422~120420416&dl=https%3A%2F%2Ftv.mar.tv%2F24&dp=%2F24&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:01:54,827 [ERROR] [root] ================================================================================
+2026-08-29 20:01:54,830 [INFO] [root] Processing channel [trialeti] -> https://tv.mar.tv/25
+2026-08-29 20:01:54,863 [DEBUG] [root] [trialeti] Navigating page...
+2026-08-29 20:01:55,131 [DEBUG] [root] [trialeti] Page loaded with status: 200
+2026-08-29 20:01:57,133 [DEBUG] [root] [trialeti] Performing force mouse click at (640, 360)
+2026-08-29 20:01:57,137 [DEBUG] [root] [trialeti] Found 1 frames on target page
+2026-08-29 20:01:57,137 [DEBUG] [root] [trialeti] Inspecting frame #0: https://tv.mar.tv/25
+2026-08-29 20:01:57,157 [DEBUG] [root] [trialeti] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:01,210 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_trialeti.png
+2026-08-29 20:02:01,210 [ERROR] [root] ================================================================================
+2026-08-29 20:02:01,210 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: trialeti]
+2026-08-29 20:02:01,210 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:01,210 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:01,210 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:01,210 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:01,211 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:01,211 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/25
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1539115520&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F25&dp=%2F25&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=264816056
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3517.4386697258874+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F25+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033715159&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F25&dp=%2F25&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5378
+2026-08-29 20:02:01,211 [ERROR] [root] ================================================================================
+2026-08-29 20:02:01,214 [INFO] [root] Processing channel [dardimandi] -> https://tv.mar.tv/27
+2026-08-29 20:02:01,245 [DEBUG] [root] [dardimandi] Navigating page...
+2026-08-29 20:02:01,507 [DEBUG] [root] [dardimandi] Page loaded with status: 200
+2026-08-29 20:02:03,509 [DEBUG] [root] [dardimandi] Performing force mouse click at (640, 360)
+2026-08-29 20:02:03,512 [DEBUG] [root] [dardimandi] Found 1 frames on target page
+2026-08-29 20:02:03,512 [DEBUG] [root] [dardimandi] Inspecting frame #0: https://tv.mar.tv/27
+2026-08-29 20:02:03,531 [DEBUG] [root] [dardimandi] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:07,593 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_dardimandi.png
+2026-08-29 20:02:07,593 [ERROR] [root] ================================================================================
+2026-08-29 20:02:07,593 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: dardimandi]
+2026-08-29 20:02:07,593 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:07,593 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:07,593 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:07,593 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:07,593 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:07,593 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/27
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=939930817&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F27&dp=%2F27&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=2060161983
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5256.843596880731+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F27+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033721536&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F27&dp=%2F27&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5370
+2026-08-29 20:02:07,593 [ERROR] [root] ================================================================================
+2026-08-29 20:02:07,599 [INFO] [root] Processing channel [agro] -> https://tv.mar.tv/28
+2026-08-29 20:02:07,630 [DEBUG] [root] [agro] Navigating page...
+2026-08-29 20:02:07,898 [DEBUG] [root] [agro] Page loaded with status: 200
+2026-08-29 20:02:09,901 [DEBUG] [root] [agro] Performing force mouse click at (640, 360)
+2026-08-29 20:02:09,904 [DEBUG] [root] [agro] Found 1 frames on target page
+2026-08-29 20:02:09,904 [DEBUG] [root] [agro] Inspecting frame #0: https://tv.mar.tv/28
+2026-08-29 20:02:09,924 [DEBUG] [root] [agro] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:13,977 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_agro.png
+2026-08-29 20:02:13,977 [ERROR] [root] ================================================================================
+2026-08-29 20:02:13,977 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: agro]
+2026-08-29 20:02:13,977 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:13,977 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:13,977 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:13,977 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:13,977 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:13,977 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/28
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1959288039&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F28&dp=%2F28&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1007639323
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3856.5870463576157+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F28+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033727924&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~119259606~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F28&dp=%2F28&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5374
+2026-08-29 20:02:13,977 [ERROR] [root] ================================================================================
+2026-08-29 20:02:13,981 [INFO] [root] Processing channel [samefo] -> https://tv.mar.tv/29
+2026-08-29 20:02:14,015 [DEBUG] [root] [samefo] Navigating page...
+2026-08-29 20:02:14,277 [DEBUG] [root] [samefo] Page loaded with status: 200
+2026-08-29 20:02:16,280 [DEBUG] [root] [samefo] Performing force mouse click at (640, 360)
+2026-08-29 20:02:16,283 [DEBUG] [root] [samefo] Found 1 frames on target page
+2026-08-29 20:02:16,283 [DEBUG] [root] [samefo] Inspecting frame #0: https://tv.mar.tv/29
+2026-08-29 20:02:16,303 [DEBUG] [root] [samefo] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:20,360 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_samefo.png
+2026-08-29 20:02:20,360 [ERROR] [root] ================================================================================
+2026-08-29 20:02:20,360 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: samefo]
+2026-08-29 20:02:20,360 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:20,360 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:20,360 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:20,360 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:20,360 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:20,360 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/29
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=36775678&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F29&dp=%2F29&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=797173817
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:2323.40972341727+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F29+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033734305&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F29&dp=%2F29&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5369
+2026-08-29 20:02:20,360 [ERROR] [root] ================================================================================
+2026-08-29 20:02:20,363 [INFO] [root] Processing channel [postv] -> https://tv.mar.tv/31
+2026-08-29 20:02:20,396 [DEBUG] [root] [postv] Navigating page...
+2026-08-29 20:02:20,661 [DEBUG] [root] [postv] Page loaded with status: 200
+2026-08-29 20:02:22,663 [DEBUG] [root] [postv] Performing force mouse click at (640, 360)
+2026-08-29 20:02:22,666 [DEBUG] [root] [postv] Found 1 frames on target page
+2026-08-29 20:02:22,666 [DEBUG] [root] [postv] Inspecting frame #0: https://tv.mar.tv/31
+2026-08-29 20:02:22,686 [DEBUG] [root] [postv] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:26,742 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_postv.png
+2026-08-29 20:02:26,742 [ERROR] [root] ================================================================================
+2026-08-29 20:02:26,742 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: postv]
+2026-08-29 20:02:26,742 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:26,742 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:26,742 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:26,742 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:26,742 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:26,742 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/31
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=820454617&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F31&dp=%2F31&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1996497451
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3741.360980711462+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F31+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033740689&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385423~120412527&dl=https%3A%2F%2Ftv.mar.tv%2F31&dp=%2F31&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5374
+2026-08-29 20:02:26,742 [ERROR] [root] ================================================================================
+2026-08-29 20:02:26,745 [INFO] [root] Processing channel [megatv] -> https://tv.mar.tv/32
+2026-08-29 20:02:26,780 [DEBUG] [root] [megatv] Navigating page...
+2026-08-29 20:02:27,045 [DEBUG] [root] [megatv] Page loaded with status: 200
+2026-08-29 20:02:29,047 [DEBUG] [root] [megatv] Performing force mouse click at (640, 360)
+2026-08-29 20:02:29,050 [DEBUG] [root] [megatv] Found 1 frames on target page
+2026-08-29 20:02:29,050 [DEBUG] [root] [megatv] Inspecting frame #0: https://tv.mar.tv/32
+2026-08-29 20:02:29,070 [DEBUG] [root] [megatv] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:33,125 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_megatv.png
+2026-08-29 20:02:33,126 [ERROR] [root] ================================================================================
+2026-08-29 20:02:33,126 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: megatv]
+2026-08-29 20:02:33,126 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:33,126 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:33,126 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:33,126 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:33,126 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:33,126 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/32
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1680538874&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F32&dp=%2F32&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=832685398
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:9297.693372995434+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F32+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033747073&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120763598&dl=https%3A%2F%2Ftv.mar.tv%2F32&dp=%2F32&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:02:33,126 [ERROR] [root] ================================================================================
+2026-08-29 20:02:33,130 [INFO] [root] Processing channel [qartuliarxi] -> https://tv.mar.tv/33
+2026-08-29 20:02:33,160 [DEBUG] [root] [qartuliarxi] Navigating page...
+2026-08-29 20:02:33,428 [DEBUG] [root] [qartuliarxi] Page loaded with status: 200
+2026-08-29 20:02:35,428 [DEBUG] [root] [qartuliarxi] Performing force mouse click at (640, 360)
+2026-08-29 20:02:35,432 [DEBUG] [root] [qartuliarxi] Found 1 frames on target page
+2026-08-29 20:02:35,432 [DEBUG] [root] [qartuliarxi] Inspecting frame #0: https://tv.mar.tv/33
+2026-08-29 20:02:35,451 [DEBUG] [root] [qartuliarxi] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:39,508 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_qartuliarxi.png
+2026-08-29 20:02:39,508 [ERROR] [root] ================================================================================
+2026-08-29 20:02:39,508 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: qartuliarxi]
+2026-08-29 20:02:39,508 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:39,508 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:39,508 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:39,508 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:39,508 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:39,508 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/33
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2071386936&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F33&dp=%2F33&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=2004173982
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:9917.696745083385+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F33+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033753455&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=1&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120763597&dl=https%3A%2F%2Ftv.mar.tv%2F33&dp=%2F33&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5375
+2026-08-29 20:02:39,508 [ERROR] [root] ================================================================================
+2026-08-29 20:02:39,512 [INFO] [root] Processing channel [musicbox] -> https://tv.mar.tv/34
+2026-08-29 20:02:39,543 [DEBUG] [root] [musicbox] Navigating page...
+2026-08-29 20:02:39,808 [DEBUG] [root] [musicbox] Page loaded with status: 200
+2026-08-29 20:02:41,810 [DEBUG] [root] [musicbox] Performing force mouse click at (640, 360)
+2026-08-29 20:02:41,813 [DEBUG] [root] [musicbox] Found 1 frames on target page
+2026-08-29 20:02:41,814 [DEBUG] [root] [musicbox] Inspecting frame #0: https://tv.mar.tv/34
+2026-08-29 20:02:41,834 [DEBUG] [root] [musicbox] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:45,891 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_musicbox.png
+2026-08-29 20:02:45,891 [ERROR] [root] ================================================================================
+2026-08-29 20:02:45,891 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: musicbox]
+2026-08-29 20:02:45,891 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:45,891 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:45,891 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:45,892 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:45,892 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:45,892 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/34
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1707359504&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F34&dp=%2F34&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1713845263
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:9957.69828512541+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F34+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033759834&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=1&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F34&dp=%2F34&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5371
+2026-08-29 20:02:45,892 [ERROR] [root] ================================================================================
+2026-08-29 20:02:45,895 [INFO] [root] Processing channel [marneuli] -> https://tv.mar.tv/37
+2026-08-29 20:02:45,929 [DEBUG] [root] [marneuli] Navigating page...
+2026-08-29 20:02:46,192 [DEBUG] [root] [marneuli] Page loaded with status: 200
+2026-08-29 20:02:48,194 [DEBUG] [root] [marneuli] Performing force mouse click at (640, 360)
+2026-08-29 20:02:48,198 [DEBUG] [root] [marneuli] Found 1 frames on target page
+2026-08-29 20:02:48,198 [DEBUG] [root] [marneuli] Inspecting frame #0: https://tv.mar.tv/37
+2026-08-29 20:02:48,217 [DEBUG] [root] [marneuli] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:52,274 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_marneuli.png
+2026-08-29 20:02:52,274 [ERROR] [root] ================================================================================
+2026-08-29 20:02:52,274 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: marneuli]
+2026-08-29 20:02:52,275 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:52,275 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:52,275 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:52,275 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:52,275 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:52,275 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/37
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1101366597&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F37&dp=%2F37&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1217147618
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3243.9877429007447+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F37+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033766218&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F37&dp=%2F37&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5369
+2026-08-29 20:02:52,275 [ERROR] [root] ================================================================================
+2026-08-29 20:02:52,278 [INFO] [root] Processing channel [axaliformula] -> https://tv.mar.tv/38
+2026-08-29 20:02:52,310 [DEBUG] [root] [axaliformula] Navigating page...
+2026-08-29 20:02:52,574 [DEBUG] [root] [axaliformula] Page loaded with status: 200
+2026-08-29 20:02:54,577 [DEBUG] [root] [axaliformula] Performing force mouse click at (640, 360)
+2026-08-29 20:02:54,580 [DEBUG] [root] [axaliformula] Found 1 frames on target page
+2026-08-29 20:02:54,580 [DEBUG] [root] [axaliformula] Inspecting frame #0: https://tv.mar.tv/38
+2026-08-29 20:02:54,600 [DEBUG] [root] [axaliformula] Triggering click on 'video' inside frame #0
+2026-08-29 20:02:58,657 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_axaliformula.png
+2026-08-29 20:02:58,657 [ERROR] [root] ================================================================================
+2026-08-29 20:02:58,657 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: axaliformula]
+2026-08-29 20:02:58,657 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:02:58,657 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:02:58,657 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:02:58,657 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:02:58,657 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:02:58,657 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/38
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1358621633&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F38&dp=%2F38&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=1119999947&gjid=304203493&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_r=1&_slc=1&z=619228516
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:7284.0792283739665+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F38+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033772602&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F38&dp=%2F38&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5371
+2026-08-29 20:02:58,658 [ERROR] [root] ================================================================================
+2026-08-29 20:02:58,661 [INFO] [root] Processing channel [o2] -> https://tv.mar.tv/40
+2026-08-29 20:02:58,692 [DEBUG] [root] [o2] Navigating page...
+2026-08-29 20:02:58,958 [DEBUG] [root] [o2] Page loaded with status: 200
+2026-08-29 20:03:00,961 [DEBUG] [root] [o2] Performing force mouse click at (640, 360)
+2026-08-29 20:03:00,964 [DEBUG] [root] [o2] Found 1 frames on target page
+2026-08-29 20:03:00,964 [DEBUG] [root] [o2] Inspecting frame #0: https://tv.mar.tv/40
+2026-08-29 20:03:00,984 [DEBUG] [root] [o2] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:05,040 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_o2.png
+2026-08-29 20:03:05,040 [ERROR] [root] ================================================================================
+2026-08-29 20:03:05,040 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: o2]
+2026-08-29 20:03:05,041 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:05,041 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:05,041 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:05,041 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:05,041 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:05,041 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/40
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2101102752&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F40&dp=%2F40&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=356578808
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3628.8248491959475+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F40+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033778985&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F40&dp=%2F40&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5375
+2026-08-29 20:03:05,041 [ERROR] [root] ================================================================================
+2026-08-29 20:03:05,044 [INFO] [root] Processing channel [guria] -> https://tv.mar.tv/42
+2026-08-29 20:03:05,074 [DEBUG] [root] [guria] Navigating page...
+2026-08-29 20:03:05,343 [DEBUG] [root] [guria] Page loaded with status: 200
+2026-08-29 20:03:07,344 [DEBUG] [root] [guria] Performing force mouse click at (640, 360)
+2026-08-29 20:03:07,347 [DEBUG] [root] [guria] Found 1 frames on target page
+2026-08-29 20:03:07,347 [DEBUG] [root] [guria] Inspecting frame #0: https://tv.mar.tv/42
+2026-08-29 20:03:07,368 [DEBUG] [root] [guria] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:11,424 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_guria.png
+2026-08-29 20:03:11,424 [ERROR] [root] ================================================================================
+2026-08-29 20:03:11,424 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: guria]
+2026-08-29 20:03:11,424 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:11,424 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:11,424 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:11,424 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:11,424 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:11,424 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/42
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2077167776&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F42&dp=%2F42&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=542788871
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:2035.088707258811+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F42+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033785369&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~119381662~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F42&dp=%2F42&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5374
+2026-08-29 20:03:11,424 [ERROR] [root] ================================================================================
+2026-08-29 20:03:11,428 [INFO] [root] Processing channel [imervizia] -> https://tv.mar.tv/43
+2026-08-29 20:03:11,457 [DEBUG] [root] [imervizia] Navigating page...
+2026-08-29 20:03:11,723 [DEBUG] [root] [imervizia] Page loaded with status: 200
+2026-08-29 20:03:13,725 [DEBUG] [root] [imervizia] Performing force mouse click at (640, 360)
+2026-08-29 20:03:13,729 [DEBUG] [root] [imervizia] Found 1 frames on target page
+2026-08-29 20:03:13,729 [DEBUG] [root] [imervizia] Inspecting frame #0: https://tv.mar.tv/43
+2026-08-29 20:03:13,749 [DEBUG] [root] [imervizia] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:17,808 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_imervizia.png
+2026-08-29 20:03:17,808 [ERROR] [root] ================================================================================
+2026-08-29 20:03:17,808 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: imervizia]
+2026-08-29 20:03:17,808 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:17,808 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:17,808 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:17,809 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:17,809 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:17,809 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/43
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1162619195&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F43&dp=%2F43&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1854396476
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5636.789827608027+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F43+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033791748&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F43&dp=%2F43&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5374
+2026-08-29 20:03:17,809 [ERROR] [root] ================================================================================
+2026-08-29 20:03:17,812 [INFO] [root] Processing channel [diatv] -> https://tv.mar.tv/44
+2026-08-29 20:03:17,844 [DEBUG] [root] [diatv] Navigating page...
+2026-08-29 20:03:18,114 [DEBUG] [root] [diatv] Page loaded with status: 200
+2026-08-29 20:03:20,116 [DEBUG] [root] [diatv] Performing force mouse click at (640, 360)
+2026-08-29 20:03:20,119 [DEBUG] [root] [diatv] Found 1 frames on target page
+2026-08-29 20:03:20,119 [DEBUG] [root] [diatv] Inspecting frame #0: https://tv.mar.tv/44
+2026-08-29 20:03:20,139 [DEBUG] [root] [diatv] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:24,191 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_diatv.png
+2026-08-29 20:03:24,191 [ERROR] [root] ================================================================================
+2026-08-29 20:03:24,191 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: diatv]
+2026-08-29 20:03:24,191 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:24,191 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:24,191 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:24,191 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:24,191 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:24,191 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/44
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1417067445&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F44&dp=%2F44&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1210238158
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5768.85078858696+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F44+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033798140&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=4&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F44&dp=%2F44&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5376
+2026-08-29 20:03:24,191 [ERROR] [root] ================================================================================
+2026-08-29 20:03:24,195 [INFO] [root] Processing channel [chveniarxi] -> https://tv.mar.tv/45
+2026-08-29 20:03:24,227 [DEBUG] [root] [chveniarxi] Navigating page...
+2026-08-29 20:03:24,493 [DEBUG] [root] [chveniarxi] Page loaded with status: 200
+2026-08-29 20:03:26,497 [DEBUG] [root] [chveniarxi] Performing force mouse click at (640, 360)
+2026-08-29 20:03:26,500 [DEBUG] [root] [chveniarxi] Found 1 frames on target page
+2026-08-29 20:03:26,500 [DEBUG] [root] [chveniarxi] Inspecting frame #0: https://tv.mar.tv/45
+2026-08-29 20:03:26,521 [DEBUG] [root] [chveniarxi] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:30,574 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_chveniarxi.png
+2026-08-29 20:03:30,574 [ERROR] [root] ================================================================================
+2026-08-29 20:03:30,574 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: chveniarxi]
+2026-08-29 20:03:30,574 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:30,574 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:30,574 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:30,574 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:30,575 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:30,575 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/45
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=994537960&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F45&dp=%2F45&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1206264072
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:9794.190396059732+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F45+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033804519&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F45&dp=%2F45&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:03:30,575 [ERROR] [root] ================================================================================
+2026-08-29 20:03:30,578 [INFO] [root] Processing channel [batumitv] -> https://tv.mar.tv/46
+2026-08-29 20:03:30,610 [DEBUG] [root] [batumitv] Navigating page...
+2026-08-29 20:03:30,875 [DEBUG] [root] [batumitv] Page loaded with status: 200
+2026-08-29 20:03:32,877 [DEBUG] [root] [batumitv] Performing force mouse click at (640, 360)
+2026-08-29 20:03:32,880 [DEBUG] [root] [batumitv] Found 1 frames on target page
+2026-08-29 20:03:32,880 [DEBUG] [root] [batumitv] Inspecting frame #0: https://tv.mar.tv/46
+2026-08-29 20:03:32,900 [DEBUG] [root] [batumitv] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:36,955 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_batumitv.png
+2026-08-29 20:03:36,955 [ERROR] [root] ================================================================================
+2026-08-29 20:03:36,955 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: batumitv]
+2026-08-29 20:03:36,955 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:36,955 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:36,955 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:36,955 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:36,956 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:36,956 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/46
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1400859267&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F46&dp=%2F46&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=873759866
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:4833.711034912245+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F46+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033810902&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F46&dp=%2F46&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5370
+2026-08-29 20:03:36,956 [ERROR] [root] ================================================================================
+2026-08-29 20:03:36,959 [INFO] [root] Processing channel [rcheuli] -> https://tv.mar.tv/47
+2026-08-29 20:03:36,988 [DEBUG] [root] [rcheuli] Navigating page...
+2026-08-29 20:03:37,255 [DEBUG] [root] [rcheuli] Page loaded with status: 200
+2026-08-29 20:03:39,257 [DEBUG] [root] [rcheuli] Performing force mouse click at (640, 360)
+2026-08-29 20:03:39,260 [DEBUG] [root] [rcheuli] Found 1 frames on target page
+2026-08-29 20:03:39,260 [DEBUG] [root] [rcheuli] Inspecting frame #0: https://tv.mar.tv/47
+2026-08-29 20:03:39,279 [DEBUG] [root] [rcheuli] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:43,338 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_rcheuli.png
+2026-08-29 20:03:43,338 [ERROR] [root] ================================================================================
+2026-08-29 20:03:43,339 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: rcheuli]
+2026-08-29 20:03:43,339 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:43,339 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:43,339 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:43,339 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:43,339 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:43,339 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/47
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1725310786&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F47&dp=%2F47&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1858089169
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3158.4385276656435+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F47+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033817287&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=1&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F47&dp=%2F47&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5379
+2026-08-29 20:03:43,339 [ERROR] [root] ================================================================================
+2026-08-29 20:03:43,342 [INFO] [root] Processing channel [gurjaani] -> https://tv.mar.tv/48
+2026-08-29 20:03:43,375 [DEBUG] [root] [gurjaani] Navigating page...
+2026-08-29 20:03:43,639 [DEBUG] [root] [gurjaani] Page loaded with status: 200
+2026-08-29 20:03:45,640 [DEBUG] [root] [gurjaani] Performing force mouse click at (640, 360)
+2026-08-29 20:03:45,643 [DEBUG] [root] [gurjaani] Found 1 frames on target page
+2026-08-29 20:03:45,643 [DEBUG] [root] [gurjaani] Inspecting frame #0: https://tv.mar.tv/48
+2026-08-29 20:03:45,662 [DEBUG] [root] [gurjaani] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:49,722 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_gurjaani.png
+2026-08-29 20:03:49,722 [ERROR] [root] ================================================================================
+2026-08-29 20:03:49,722 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: gurjaani]
+2026-08-29 20:03:49,722 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:49,722 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:49,722 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:49,722 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:49,722 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:49,722 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/48
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2056242311&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F48&dp=%2F48&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1386641804
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:169.175451446546+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F48+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033823666&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F48&dp=%2F48&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5372
+2026-08-29 20:03:49,723 [ERROR] [root] ================================================================================
+2026-08-29 20:03:49,727 [INFO] [root] Processing channel [molitv] -> https://tv.mar.tv/49
+2026-08-29 20:03:49,758 [DEBUG] [root] [molitv] Navigating page...
+2026-08-29 20:03:50,031 [DEBUG] [root] [molitv] Page loaded with status: 200
+2026-08-29 20:03:52,034 [DEBUG] [root] [molitv] Performing force mouse click at (640, 360)
+2026-08-29 20:03:52,037 [DEBUG] [root] [molitv] Found 1 frames on target page
+2026-08-29 20:03:52,037 [DEBUG] [root] [molitv] Inspecting frame #0: https://tv.mar.tv/49
+2026-08-29 20:03:52,056 [DEBUG] [root] [molitv] Triggering click on 'video' inside frame #0
+2026-08-29 20:03:56,105 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_molitv.png
+2026-08-29 20:03:56,105 [ERROR] [root] ================================================================================
+2026-08-29 20:03:56,105 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: molitv]
+2026-08-29 20:03:56,105 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:03:56,105 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:03:56,105 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:03:56,105 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:03:56,106 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:03:56,106 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/49
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1216912987&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F49&dp=%2F49&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1729178392
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:1038.9876019582555+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F49+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033830056&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=1&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F49&dp=%2F49&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5374
+2026-08-29 20:03:56,106 [ERROR] [root] ================================================================================
+2026-08-29 20:03:56,110 [INFO] [root] Processing channel [mexute] -> https://tv.mar.tv/50
+2026-08-29 20:03:56,139 [DEBUG] [root] [mexute] Navigating page...
+2026-08-29 20:03:56,408 [DEBUG] [root] [mexute] Page loaded with status: 200
+2026-08-29 20:03:58,411 [DEBUG] [root] [mexute] Performing force mouse click at (640, 360)
+2026-08-29 20:03:58,414 [DEBUG] [root] [mexute] Found 1 frames on target page
+2026-08-29 20:03:58,414 [DEBUG] [root] [mexute] Inspecting frame #0: https://tv.mar.tv/50
+2026-08-29 20:03:58,435 [DEBUG] [root] [mexute] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:02,488 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_mexute.png
+2026-08-29 20:04:02,488 [ERROR] [root] ================================================================================
+2026-08-29 20:04:02,488 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: mexute]
+2026-08-29 20:04:02,488 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:02,488 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:02,488 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:02,488 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:02,488 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:02,488 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/50
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=318259197&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F50&dp=%2F50&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=212039331&gjid=1956107639&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_r=1&_slc=1&z=320223252
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3326.8884359099625+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F50+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033836435&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=17&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120763597&dl=https%3A%2F%2Ftv.mar.tv%2F50&dp=%2F50&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:04:02,488 [ERROR] [root] ================================================================================
+2026-08-29 20:04:02,491 [INFO] [root] Processing channel [agrogaremo] -> https://tv.mar.tv/51
+2026-08-29 20:04:02,521 [DEBUG] [root] [agrogaremo] Navigating page...
+2026-08-29 20:04:02,785 [DEBUG] [root] [agrogaremo] Page loaded with status: 200
+2026-08-29 20:04:04,788 [DEBUG] [root] [agrogaremo] Performing force mouse click at (640, 360)
+2026-08-29 20:04:04,791 [DEBUG] [root] [agrogaremo] Found 1 frames on target page
+2026-08-29 20:04:04,792 [DEBUG] [root] [agrogaremo] Inspecting frame #0: https://tv.mar.tv/51
+2026-08-29 20:04:04,810 [DEBUG] [root] [agrogaremo] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:08,872 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_agrogaremo.png
+2026-08-29 20:04:08,872 [ERROR] [root] ================================================================================
+2026-08-29 20:04:08,872 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: agrogaremo]
+2026-08-29 20:04:08,872 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:08,872 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:08,872 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:08,872 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:08,873 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:08,873 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/51
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1049176888&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F51&dp=%2F51&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=2073932607
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:2582.984138057803+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F51+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033842813&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~119259605~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F51&dp=%2F51&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5373
+2026-08-29 20:04:08,873 [ERROR] [root] ================================================================================
+2026-08-29 20:04:08,876 [INFO] [root] Processing channel [artv] -> https://tv.mar.tv/52
+2026-08-29 20:04:08,908 [DEBUG] [root] [artv] Navigating page...
+2026-08-29 20:04:09,173 [DEBUG] [root] [artv] Page loaded with status: 200
+2026-08-29 20:04:11,175 [DEBUG] [root] [artv] Performing force mouse click at (640, 360)
+2026-08-29 20:04:11,179 [DEBUG] [root] [artv] Found 1 frames on target page
+2026-08-29 20:04:11,179 [DEBUG] [root] [artv] Inspecting frame #0: https://tv.mar.tv/52
+2026-08-29 20:04:11,199 [DEBUG] [root] [artv] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:15,254 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_artv.png
+2026-08-29 20:04:15,254 [ERROR] [root] ================================================================================
+2026-08-29 20:04:15,254 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: artv]
+2026-08-29 20:04:15,254 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:15,254 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:15,254 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:15,254 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:15,254 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:15,255 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/52
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1244294716&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F52&dp=%2F52&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=2110666463
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:3366.0111325985918+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F52+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033849201&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F52&dp=%2F52&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&_et=1&tfd=5374
+2026-08-29 20:04:15,255 [ERROR] [root] ================================================================================
+2026-08-29 20:04:15,258 [INFO] [root] Processing channel [meteo24] -> https://tv.mar.tv/56
+2026-08-29 20:04:15,288 [DEBUG] [root] [meteo24] Navigating page...
+2026-08-29 20:04:15,553 [DEBUG] [root] [meteo24] Page loaded with status: 200
+2026-08-29 20:04:17,554 [DEBUG] [root] [meteo24] Performing force mouse click at (640, 360)
+2026-08-29 20:04:17,557 [DEBUG] [root] [meteo24] Found 1 frames on target page
+2026-08-29 20:04:17,557 [DEBUG] [root] [meteo24] Inspecting frame #0: https://tv.mar.tv/56
+2026-08-29 20:04:17,576 [DEBUG] [root] [meteo24] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:21,637 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_meteo24.png
+2026-08-29 20:04:21,637 [ERROR] [root] ================================================================================
+2026-08-29 20:04:21,637 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: meteo24]
+2026-08-29 20:04:21,637 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:21,637 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:21,637 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:21,637 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:21,637 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:21,637 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/56
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1383694951&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F56&dp=%2F56&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=506123785
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:7620.404737749007+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F56+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033855578&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~119793974~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F56&dp=%2F56&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5369
+2026-08-29 20:04:21,638 [ERROR] [root] ================================================================================
+2026-08-29 20:04:21,641 [INFO] [root] Processing channel [georgiantimes] -> https://tv.mar.tv/57
+2026-08-29 20:04:21,669 [DEBUG] [root] [georgiantimes] Navigating page...
+2026-08-29 20:04:21,938 [DEBUG] [root] [georgiantimes] Page loaded with status: 200
+2026-08-29 20:04:23,942 [DEBUG] [root] [georgiantimes] Performing force mouse click at (640, 360)
+2026-08-29 20:04:23,945 [DEBUG] [root] [georgiantimes] Found 1 frames on target page
+2026-08-29 20:04:23,945 [DEBUG] [root] [georgiantimes] Inspecting frame #0: https://tv.mar.tv/57
+2026-08-29 20:04:23,965 [DEBUG] [root] [georgiantimes] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:28,020 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_georgiantimes.png
+2026-08-29 20:04:28,020 [ERROR] [root] ================================================================================
+2026-08-29 20:04:28,021 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: georgiantimes]
+2026-08-29 20:04:28,021 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:28,021 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:28,021 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:28,021 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:28,021 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:28,021 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/57
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1952902655&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F57&dp=%2F57&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=610197390
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:755.5991742659496+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F57+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033861968&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F57&dp=%2F57&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5378
+2026-08-29 20:04:28,021 [ERROR] [root] ================================================================================
+2026-08-29 20:04:28,025 [INFO] [root] Processing channel [silkuniversal] -> https://tv.mar.tv/155
+2026-08-29 20:04:28,058 [DEBUG] [root] [silkuniversal] Navigating page...
+2026-08-29 20:04:28,321 [DEBUG] [root] [silkuniversal] Page loaded with status: 200
+2026-08-29 20:04:30,323 [DEBUG] [root] [silkuniversal] Performing force mouse click at (640, 360)
+2026-08-29 20:04:30,328 [DEBUG] [root] [silkuniversal] Found 1 frames on target page
+2026-08-29 20:04:30,328 [DEBUG] [root] [silkuniversal] Inspecting frame #0: https://tv.mar.tv/155
+2026-08-29 20:04:30,348 [DEBUG] [root] [silkuniversal] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:34,403 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_silkuniversal.png
+2026-08-29 20:04:34,404 [ERROR] [root] ================================================================================
+2026-08-29 20:04:34,404 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: silkuniversal]
+2026-08-29 20:04:34,404 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:34,404 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:34,404 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:34,404 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:34,404 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:34,404 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/155
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2136299647&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F155&dp=%2F155&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=532358572
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5420.607911917711+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F155+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033868348&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=7&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~119259606~120213116~120385423~120763598&dl=https%3A%2F%2Ftv.mar.tv%2F155&dp=%2F155&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5368
+2026-08-29 20:04:34,404 [ERROR] [root] ================================================================================
+2026-08-29 20:04:34,407 [INFO] [root] Processing channel [rugbytv] -> https://tv.mar.tv/160
+2026-08-29 20:04:34,442 [DEBUG] [root] [rugbytv] Navigating page...
+2026-08-29 20:04:34,707 [DEBUG] [root] [rugbytv] Page loaded with status: 200
+2026-08-29 20:04:36,709 [DEBUG] [root] [rugbytv] Performing force mouse click at (640, 360)
+2026-08-29 20:04:36,712 [DEBUG] [root] [rugbytv] Found 1 frames on target page
+2026-08-29 20:04:36,712 [DEBUG] [root] [rugbytv] Inspecting frame #0: https://tv.mar.tv/160
+2026-08-29 20:04:36,732 [DEBUG] [root] [rugbytv] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:40,786 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_rugbytv.png
+2026-08-29 20:04:40,786 [ERROR] [root] ================================================================================
+2026-08-29 20:04:40,786 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: rugbytv]
+2026-08-29 20:04:40,786 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:40,786 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:40,786 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:40,786 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:40,786 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:40,787 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/160
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=614744651&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F160&dp=%2F160&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=194894253
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5409.867586916024+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F160+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033874736&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=7&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F160&dp=%2F160&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5375
+2026-08-29 20:04:40,787 [ERROR] [root] ================================================================================
+2026-08-29 20:04:40,791 [INFO] [root] Processing channel [gms] -> https://tv.mar.tv/161
+2026-08-29 20:04:40,824 [DEBUG] [root] [gms] Navigating page...
+2026-08-29 20:04:41,088 [DEBUG] [root] [gms] Page loaded with status: 200
+2026-08-29 20:04:43,090 [DEBUG] [root] [gms] Performing force mouse click at (640, 360)
+2026-08-29 20:04:43,094 [DEBUG] [root] [gms] Found 1 frames on target page
+2026-08-29 20:04:43,094 [DEBUG] [root] [gms] Inspecting frame #0: https://tv.mar.tv/161
+2026-08-29 20:04:43,114 [DEBUG] [root] [gms] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:47,169 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_gms.png
+2026-08-29 20:04:47,169 [ERROR] [root] ================================================================================
+2026-08-29 20:04:47,170 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: gms]
+2026-08-29 20:04:47,170 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:47,170 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:47,170 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:47,170 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:47,170 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:47,170 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/161
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2084169202&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F161&dp=%2F161&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1781902752
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:6801.949380981732+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F161+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033881115&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F161&dp=%2F161&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5370
+2026-08-29 20:04:47,170 [ERROR] [root] ================================================================================
+2026-08-29 20:04:47,173 [INFO] [root] Processing channel [aiatv] -> https://tv.mar.tv/992
+2026-08-29 20:04:47,205 [DEBUG] [root] [aiatv] Navigating page...
+2026-08-29 20:04:47,471 [DEBUG] [root] [aiatv] Page loaded with status: 200
+2026-08-29 20:04:49,473 [DEBUG] [root] [aiatv] Performing force mouse click at (640, 360)
+2026-08-29 20:04:49,476 [DEBUG] [root] [aiatv] Found 1 frames on target page
+2026-08-29 20:04:49,476 [DEBUG] [root] [aiatv] Inspecting frame #0: https://tv.mar.tv/992
+2026-08-29 20:04:49,495 [DEBUG] [root] [aiatv] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:53,552 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_aiatv.png
+2026-08-29 20:04:53,553 [ERROR] [root] ================================================================================
+2026-08-29 20:04:53,553 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: aiatv]
+2026-08-29 20:04:53,553 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:53,553 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:53,553 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:53,553 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:53,553 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:53,553 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/992
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1610775106&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F992&dp=%2F992&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1432350029
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:4350.944688392909+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F992+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033887497&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~119259606~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F992&dp=%2F992&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5371
+2026-08-29 20:04:53,553 [ERROR] [root] ================================================================================
+2026-08-29 20:04:53,556 [INFO] [root] Processing channel [batumi2] -> https://tv.mar.tv/994
+2026-08-29 20:04:53,586 [DEBUG] [root] [batumi2] Navigating page...
+2026-08-29 20:04:53,849 [DEBUG] [root] [batumi2] Page loaded with status: 200
+2026-08-29 20:04:55,851 [DEBUG] [root] [batumi2] Performing force mouse click at (640, 360)
+2026-08-29 20:04:55,854 [DEBUG] [root] [batumi2] Found 1 frames on target page
+2026-08-29 20:04:55,854 [DEBUG] [root] [batumi2] Inspecting frame #0: https://tv.mar.tv/994
+2026-08-29 20:04:55,873 [DEBUG] [root] [batumi2] Triggering click on 'video' inside frame #0
+2026-08-29 20:04:59,935 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_batumi2.png
+2026-08-29 20:04:59,935 [ERROR] [root] ================================================================================
+2026-08-29 20:04:59,935 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: batumi2]
+2026-08-29 20:04:59,935 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:04:59,935 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:04:59,936 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:04:59,936 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:04:59,936 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:04:59,936 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/994
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=385035016&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F994&dp=%2F994&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=852906868
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:6510.610939544606+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F994+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033893877&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~119259606~119791748~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F994&dp=%2F994&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5371
+2026-08-29 20:04:59,936 [ERROR] [root] ================================================================================
+2026-08-29 20:04:59,939 [INFO] [root] Processing channel [altinfo] -> https://tv.mar.tv/996
+2026-08-29 20:04:59,972 [DEBUG] [root] [altinfo] Navigating page...
+2026-08-29 20:05:00,240 [DEBUG] [root] [altinfo] Page loaded with status: 200
+2026-08-29 20:05:02,243 [DEBUG] [root] [altinfo] Performing force mouse click at (640, 360)
+2026-08-29 20:05:02,246 [DEBUG] [root] [altinfo] Found 1 frames on target page
+2026-08-29 20:05:02,246 [DEBUG] [root] [altinfo] Inspecting frame #0: https://tv.mar.tv/996
+2026-08-29 20:05:02,267 [DEBUG] [root] [altinfo] Triggering click on 'video' inside frame #0
+2026-08-29 20:05:06,319 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_altinfo.png
+2026-08-29 20:05:06,319 [ERROR] [root] ================================================================================
+2026-08-29 20:05:06,319 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: altinfo]
+2026-08-29 20:05:06,319 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:05:06,319 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:05:06,319 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:05:06,319 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:05:06,319 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:05:06,319 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/996
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=610451359&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F996&dp=%2F996&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=1748556244&gjid=1392299529&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_r=1&_slc=1&z=215163558
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5544.569036283951+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F996+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033900267&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F996&dp=%2F996&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5378
+2026-08-29 20:05:06,319 [ERROR] [root] ================================================================================
+2026-08-29 20:05:06,322 [INFO] [root] Processing channel [parliament] -> https://tv.mar.tv/997
+2026-08-29 20:05:06,356 [DEBUG] [root] [parliament] Navigating page...
+2026-08-29 20:05:06,622 [DEBUG] [root] [parliament] Page loaded with status: 200
+2026-08-29 20:05:08,624 [DEBUG] [root] [parliament] Performing force mouse click at (640, 360)
+2026-08-29 20:05:08,627 [DEBUG] [root] [parliament] Found 1 frames on target page
+2026-08-29 20:05:08,627 [DEBUG] [root] [parliament] Inspecting frame #0: https://tv.mar.tv/997
+2026-08-29 20:05:08,646 [DEBUG] [root] [parliament] Triggering click on 'video' inside frame #0
+2026-08-29 20:05:12,702 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_parliament.png
+2026-08-29 20:05:12,702 [ERROR] [root] ================================================================================
+2026-08-29 20:05:12,702 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: parliament]
+2026-08-29 20:05:12,702 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:05:12,702 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:05:12,702 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:05:12,702 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:05:12,702 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:05:12,702 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/997
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=922594126&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F997&dp=%2F997&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1633253309
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:4404.862401799812+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F997+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033906649&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=14&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~119791748~120213116~120385422&dl=https%3A%2F%2Ftv.mar.tv%2F997&dp=%2F997&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5372
+2026-08-29 20:05:12,702 [ERROR] [root] ================================================================================
+2026-08-29 20:05:12,705 [INFO] [root] Processing channel [egrisi] -> https://tv.mar.tv/998
+2026-08-29 20:05:12,741 [DEBUG] [root] [egrisi] Navigating page...
+2026-08-29 20:05:13,005 [DEBUG] [root] [egrisi] Page loaded with status: 200
+2026-08-29 20:05:15,007 [DEBUG] [root] [egrisi] Performing force mouse click at (640, 360)
+2026-08-29 20:05:15,010 [DEBUG] [root] [egrisi] Found 1 frames on target page
+2026-08-29 20:05:15,010 [DEBUG] [root] [egrisi] Inspecting frame #0: https://tv.mar.tv/998
+2026-08-29 20:05:15,031 [DEBUG] [root] [egrisi] Triggering click on 'video' inside frame #0
+2026-08-29 20:05:19,085 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_egrisi.png
+2026-08-29 20:05:19,085 [ERROR] [root] ================================================================================
+2026-08-29 20:05:19,085 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: egrisi]
+2026-08-29 20:05:19,085 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:05:19,086 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:05:19,086 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:05:19,086 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:05:19,086 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:05:19,086 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/998
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1821856356&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F998&dp=%2F998&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1097921119
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:6724.439749418917+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F998+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033913033&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=16&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F998&dp=%2F998&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5372
+2026-08-29 20:05:19,086 [ERROR] [root] ================================================================================
+2026-08-29 20:05:19,089 [INFO] [root] Processing channel [mzetv] -> https://tv.mar.tv/999
+2026-08-29 20:05:19,121 [DEBUG] [root] [mzetv] Navigating page...
+2026-08-29 20:05:19,383 [DEBUG] [root] [mzetv] Page loaded with status: 200
+2026-08-29 20:05:21,386 [DEBUG] [root] [mzetv] Performing force mouse click at (640, 360)
+2026-08-29 20:05:21,389 [DEBUG] [root] [mzetv] Found 1 frames on target page
+2026-08-29 20:05:21,389 [DEBUG] [root] [mzetv] Inspecting frame #0: https://tv.mar.tv/999
+2026-08-29 20:05:21,408 [DEBUG] [root] [mzetv] Triggering click on 'video' inside frame #0
+2026-08-29 20:05:25,469 [WARNING] [root]   +-- Saved failure screenshot to: logs_updater/logsnewstyle/debug_mzetv.png
+2026-08-29 20:05:25,469 [ERROR] [root] ================================================================================
+2026-08-29 20:05:25,469 [ERROR] [root] [DETAILED DIAGNOSTIC FAILURE: mzetv]
+2026-08-29 20:05:25,469 [ERROR] [root]   +-- Summary: No .m3u8 network request detected during execution sequence.
+2026-08-29 20:05:25,469 [ERROR] [root]   +-- Exception Type: RuntimeError
+2026-08-29 20:05:25,469 [ERROR] [root]   +-- Exception Message: StreamCaptureTimeout
+2026-08-29 20:05:25,469 [ERROR] [root]   +-- Stack Trace:
+2026-08-29 20:05:25,469 [ERROR] [root]   |    RuntimeError: StreamCaptureTimeout
+2026-08-29 20:05:25,469 [ERROR] [root]   +-- Snippet/Context: Recent Network Request History:
+[GET] https://tv.mar.tv/999
+[GET] https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round
+[GET] https://tv.mar.tv/static/css/main.c11f255f.chunk.css
+[GET] https://tv.mar.tv/static/js/2.4bbccdda.chunk.js
+[GET] https://tv.mar.tv/static/js/main.f965e226.chunk.js
+[GET] https://fonts.googleapis.com/css?family=Rubik
+[GET] https://www.google-analytics.com/analytics.js
+[GET] https://tv.mar.tv/static/media/logo.ad05998d.svg
+[GET] https://tv.mar.tv/static/media/martv.1374e175.png
+[GET] https://tv.mar.tv/static/media/ge.ffc0fdac.svg
+[GET] https://tv.mar.tv/static/media/bpg_mrgvlovani_caps_2010.e9600dda.ttf
+[GET] https://counter.top.ge/counter.js
+[GET] https://fonts.gstatic.com/s/materialiconsround/v109/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2
+[GET] https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2
+[GET] https://tv.mar.tv/static/media/bpg_banner_extrasquare_caps.43c0ef66.woff
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/free
+[POST] https://www.google-analytics.com/j/collect?v=1&_v=j102&a=510798778&t=pageview&_s=1&dl=https%3A%2F%2Ftv.mar.tv%2F999&dp=%2F999&ul=en-us&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=1712854727.1788033645&tid=UA-190110877-1&_gid=1229291168.1788033645&_slc=1&z=1265527080
+[GET] https://counter.top.ge/cgi-bin/count222?ID:114830+JS:11+RAND:5022.384280847716+ISFRM:0+REFERER:+RESOLUTION:1280x720+JL:https%3A%2F%2Ftv.mar.tv%2F999+DEPT:24
+[GET] https://www.googletagmanager.com/gtag/js?id=G-D3RQCFZZW4&cx=c&_slc=1
+[GET] https://mw.mar.tv/martv/api/v1/mobile/channels/genres
+[POST] https://www.google-analytics.com/g/collect?v=2&tid=G-D3RQCFZZW4&gtm=45je68q1v9133817905za20g&_p=1788033919409&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAAQ&are=1&cid=1712854727.1788033645&frm=0&ir=1&ngs=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385423&dl=https%3A%2F%2Ftv.mar.tv%2F999&dp=%2F999&dt=MarTV%20-%20%E1%83%9D%E1%83%9C%E1%83%9A%E1%83%90%E1%83%98%E1%83%9C%20%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%95%E1%83%98%E1%83%96%E1%83%98%E1%83%90&sid=1788033645&sct=1&seg=1&en=page_view&_ee=1&tfd=5367
+2026-08-29 20:05:25,469 [ERROR] [root] ================================================================================
+2026-08-29 20:05:25,507 [INFO] [root] ---> [STEP] Updating local M3U file contents...
+2026-08-29 20:05:25,507 [DEBUG] [root] Loaded existing M3U file 'georgia_channels.m3u' (12894 bytes)
+2026-08-29 20:05:25,507 [WARNING] [root] Setanta Sports 3 regex anchor target was not found in local M3U file.
+2026-08-29 20:05:25,508 [INFO] [root] No playlist file updates were performed.
+2026-08-29 20:05:25,508 [INFO] [root] ================================================================================
+2026-08-29 20:05:25,508 [INFO] [root] === SCRIPT EXECUTION COMPLETED ===
+2026-08-29 20:05:25,508 [INFO] [root] ================================================================================
