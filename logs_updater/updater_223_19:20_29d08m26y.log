@@ -1,0 +1,181 @@
+2026-08-29 19:20:47,331 [INFO] === UPDATE EXECUTION STARTED ===
+2026-08-29 19:20:47,331 [INFO] Fetching Setanta Sports 3 from IPTV-ORG...
+2026-08-29 19:20:47,447 [INFO] Launching batch scraper for 44 channels on tv.mar.tv...
+2026-08-29 19:20:48,206 [INFO] Scraping rustavi2...
+2026-08-29 19:20:57,307 [ERROR] [rustavi2 FAILURE]
+2026-08-29 19:20:57,307 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:20:57,307 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:20:57,336 [INFO] Scraping maestro...
+2026-08-29 19:21:02,677 [ERROR] [maestro FAILURE]
+2026-08-29 19:21:02,677 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:02,677 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:02,703 [INFO] Scraping marao...
+2026-08-29 19:21:08,042 [ERROR] [marao FAILURE]
+2026-08-29 19:21:08,042 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:08,042 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:08,070 [INFO] Scraping gds...
+2026-08-29 19:21:13,406 [ERROR] [gds FAILURE]
+2026-08-29 19:21:13,406 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:13,406 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:13,431 [INFO] Scraping comedy...
+2026-08-29 19:21:18,773 [ERROR] [comedy FAILURE]
+2026-08-29 19:21:18,773 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:18,774 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:18,800 [INFO] Scraping bbb...
+2026-08-29 19:21:24,140 [ERROR] [bbb FAILURE]
+2026-08-29 19:21:24,140 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:24,140 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:24,167 [INFO] Scraping enkibenki...
+2026-08-29 19:21:29,500 [ERROR] [enkibenki FAILURE]
+2026-08-29 19:21:29,501 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:29,501 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:29,529 [INFO] Scraping adjaratv...
+2026-08-29 19:21:34,872 [ERROR] [adjaratv FAILURE]
+2026-08-29 19:21:34,872 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:34,872 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:34,901 [INFO] Scraping rionitv...
+2026-08-29 19:21:40,238 [ERROR] [rionitv FAILURE]
+2026-08-29 19:21:40,238 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:40,239 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:40,265 [INFO] Scraping tv25...
+2026-08-29 19:21:45,602 [ERROR] [tv25 FAILURE]
+2026-08-29 19:21:45,602 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:45,602 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:45,630 [INFO] Scraping tv4rustavi...
+2026-08-29 19:21:50,969 [ERROR] [tv4rustavi FAILURE]
+2026-08-29 19:21:50,969 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:50,969 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:50,993 [INFO] Scraping trialeti...
+2026-08-29 19:21:56,330 [ERROR] [trialeti FAILURE]
+2026-08-29 19:21:56,330 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:21:56,330 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:21:56,357 [INFO] Scraping dardimandi...
+2026-08-29 19:22:01,687 [ERROR] [dardimandi FAILURE]
+2026-08-29 19:22:01,687 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:01,687 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:01,714 [INFO] Scraping agro...
+2026-08-29 19:22:07,050 [ERROR] [agro FAILURE]
+2026-08-29 19:22:07,050 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:07,050 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:07,078 [INFO] Scraping samefo...
+2026-08-29 19:22:12,409 [ERROR] [samefo FAILURE]
+2026-08-29 19:22:12,409 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:12,409 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:12,437 [INFO] Scraping postv...
+2026-08-29 19:22:17,770 [ERROR] [postv FAILURE]
+2026-08-29 19:22:17,770 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:17,770 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:17,795 [INFO] Scraping megatv...
+2026-08-29 19:22:23,132 [ERROR] [megatv FAILURE]
+2026-08-29 19:22:23,133 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:23,133 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:23,158 [INFO] Scraping qartuliarxi...
+2026-08-29 19:22:28,508 [ERROR] [qartuliarxi FAILURE]
+2026-08-29 19:22:28,508 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:28,508 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:28,534 [INFO] Scraping musicbox...
+2026-08-29 19:22:33,870 [ERROR] [musicbox FAILURE]
+2026-08-29 19:22:33,870 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:33,870 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:33,896 [INFO] Scraping marneuli...
+2026-08-29 19:22:39,236 [ERROR] [marneuli FAILURE]
+2026-08-29 19:22:39,236 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:39,236 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:39,264 [INFO] Scraping axaliformula...
+2026-08-29 19:22:44,603 [ERROR] [axaliformula FAILURE]
+2026-08-29 19:22:44,603 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:44,603 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:44,628 [INFO] Scraping o2...
+2026-08-29 19:22:49,964 [ERROR] [o2 FAILURE]
+2026-08-29 19:22:49,964 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:49,964 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:49,991 [INFO] Scraping guria...
+2026-08-29 19:22:55,333 [ERROR] [guria FAILURE]
+2026-08-29 19:22:55,333 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:22:55,333 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:22:55,359 [INFO] Scraping imervizia...
+2026-08-29 19:23:00,700 [ERROR] [imervizia FAILURE]
+2026-08-29 19:23:00,700 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:00,700 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:00,728 [INFO] Scraping diatv...
+2026-08-29 19:23:06,062 [ERROR] [diatv FAILURE]
+2026-08-29 19:23:06,062 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:06,062 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:06,090 [INFO] Scraping chveniarxi...
+2026-08-29 19:23:11,435 [ERROR] [chveniarxi FAILURE]
+2026-08-29 19:23:11,435 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:11,435 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:11,461 [INFO] Scraping batumitv...
+2026-08-29 19:23:16,802 [ERROR] [batumitv FAILURE]
+2026-08-29 19:23:16,802 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:16,802 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:16,825 [INFO] Scraping rcheuli...
+2026-08-29 19:23:22,160 [ERROR] [rcheuli FAILURE]
+2026-08-29 19:23:22,160 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:22,161 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:22,187 [INFO] Scraping gurjaani...
+2026-08-29 19:23:27,524 [ERROR] [gurjaani FAILURE]
+2026-08-29 19:23:27,525 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:27,525 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:27,553 [INFO] Scraping molitv...
+2026-08-29 19:23:32,885 [ERROR] [molitv FAILURE]
+2026-08-29 19:23:32,886 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:32,886 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:32,914 [INFO] Scraping mexute...
+2026-08-29 19:23:38,248 [ERROR] [mexute FAILURE]
+2026-08-29 19:23:38,248 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:38,248 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:38,276 [INFO] Scraping agrogaremo...
+2026-08-29 19:23:43,617 [ERROR] [agrogaremo FAILURE]
+2026-08-29 19:23:43,617 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:43,617 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:43,645 [INFO] Scraping artv...
+2026-08-29 19:23:48,984 [ERROR] [artv FAILURE]
+2026-08-29 19:23:48,984 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:48,984 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:49,012 [INFO] Scraping meteo24...
+2026-08-29 19:23:54,350 [ERROR] [meteo24 FAILURE]
+2026-08-29 19:23:54,350 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:54,350 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:54,376 [INFO] Scraping georgiantimes...
+2026-08-29 19:23:59,716 [ERROR] [georgiantimes FAILURE]
+2026-08-29 19:23:59,716 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:23:59,716 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:23:59,745 [INFO] Scraping silkuniversal...
+2026-08-29 19:24:05,085 [ERROR] [silkuniversal FAILURE]
+2026-08-29 19:24:05,085 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:05,085 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:05,111 [INFO] Scraping rugbytv...
+2026-08-29 19:24:10,446 [ERROR] [rugbytv FAILURE]
+2026-08-29 19:24:10,446 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:10,446 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:10,473 [INFO] Scraping gms...
+2026-08-29 19:24:15,811 [ERROR] [gms FAILURE]
+2026-08-29 19:24:15,812 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:15,812 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:15,839 [INFO] Scraping aiatv...
+2026-08-29 19:24:21,174 [ERROR] [aiatv FAILURE]
+2026-08-29 19:24:21,174 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:21,174 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:21,201 [INFO] Scraping batumi2...
+2026-08-29 19:24:26,538 [ERROR] [batumi2 FAILURE]
+2026-08-29 19:24:26,538 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:26,538 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:26,566 [INFO] Scraping altinfo...
+2026-08-29 19:24:31,907 [ERROR] [altinfo FAILURE]
+2026-08-29 19:24:31,907 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:31,907 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:31,932 [INFO] Scraping parliament...
+2026-08-29 19:24:37,267 [ERROR] [parliament FAILURE]
+2026-08-29 19:24:37,267 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:37,267 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:37,294 [INFO] Scraping egrisi...
+2026-08-29 19:24:42,633 [ERROR] [egrisi FAILURE]
+2026-08-29 19:24:42,633 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:42,633 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:42,660 [INFO] Scraping mzetv...
+2026-08-29 19:24:47,997 [ERROR] [mzetv FAILURE]
+2026-08-29 19:24:47,997 [ERROR]   └─ Reason: No .m3u8 network request detected.
+2026-08-29 19:24:47,997 [ERROR]   └─ Error Output: PlaywrightNetworkListenerError
+2026-08-29 19:24:48,033 [INFO] No file changes were made.
+2026-08-29 19:24:48,034 [INFO] === UPDATE EXECUTION FINISHED ===
