@@ -9,9 +9,19 @@ import urllib.error
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
-# Create nested logs directory: logs/logsnewstyle/
-LOG_DIR = os.path.join("logs", "logsnewstyle")
-os.makedirs(LOG_DIR, exist_ok=True)
+# 1. ENFORCE ABSOLUTE PATHS
+# This guarantees files are created EXACTLY where this Python file is located,
+# preventing them from vanishing into random system folders during automated runs.
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_DIR = os.path.join(SCRIPT_DIR, "logs", "logsnewstyle")
+MY_M3U_FILE = os.path.join(SCRIPT_DIR, "georgia_channels.m3u")
+
+# 2. FAIL-SAFE INITIALIZATION
+try:
+    os.makedirs(LOG_DIR, exist_ok=True)
+except Exception as e:
+    print(f"CRITICAL BOOT ERROR: Could not create log directory! {e}", file=sys.stderr)
+    sys.exit(1)
 
 def get_log_filename(directory):
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -21,18 +31,21 @@ def get_log_filename(directory):
 
 LOG_FILE = get_log_filename(LOG_DIR)
 
-# Configure verbose logging setup
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s [%(levelname)s] [%(name)s] %(message)s",
-    handlers=[
-        logging.FileHandler(LOG_FILE, mode="w", encoding="utf-8"),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
+try:
+    # ASCII-only logging to prevent UnicodeEncodeError crashes in headless environments
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s [%(levelname)s] [%(name)s] %(message)s",
+        handlers=[
+            logging.FileHandler(LOG_FILE, mode="w", encoding="utf-8"),
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+except Exception as e:
+    print(f"CRITICAL BOOT ERROR: Could not initialize logging! {e}", file=sys.stderr)
+    sys.exit(1)
 
 IPTV_ORG_URL = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ge.m3u"
-MY_M3U_FILE = "georgia_channels.m3u"
 
 ssl_context = ssl.create_default_context()
 ssl_context.check_hostname = False
@@ -94,20 +107,20 @@ MAR_TV_TARGETS = {
 def log_detailed_error(source_name, friendly_msg, exc=None, snippet=None):
     logging.error("=" * 80)
     logging.error(f"[DETAILED DIAGNOSTIC FAILURE: {source_name}]")
-    logging.error(f"  ├─ Summary: {friendly_msg}")
+    logging.error(f"  +-- Summary: {friendly_msg}")
     if exc:
-        logging.error(f"  ├─ Exception Type: {type(exc).__name__}")
-        logging.error(f"  ├─ Exception Message: {str(exc)}")
-        logging.error("  ├─ Stack Trace:")
+        logging.error(f"  +-- Exception Type: {type(exc).__name__}")
+        logging.error(f"  +-- Exception Message: {str(exc)}")
+        logging.error("  +-- Stack Trace:")
         for line in traceback.format_exception(type(exc), exc, exc.__traceback__):
             for subline in line.rstrip().split("\n"):
-                logging.error(f"  │    {subline}")
+                logging.error(f"  |    {subline}")
     if snippet:
-        logging.error(f"  └─ Snippet/Context: {snippet}")
+        logging.error(f"  +-- Snippet/Context: {snippet}")
     logging.error("=" * 80)
 
 def fetch_setanta_block():
-    logging.info("--> [STEP] Fetching Setanta Sports 3 from IPTV-ORG...")
+    logging.info("---> [STEP] Fetching Setanta Sports 3 from IPTV-ORG...")
     try:
         req = urllib.request.Request(IPTV_ORG_URL, headers=HEADERS)
         logging.debug(f"HTTP GET Request target: {IPTV_ORG_URL}")
@@ -129,7 +142,7 @@ def fetch_setanta_block():
     return None
 
 def fetch_mar_tv_streams():
-    logging.info(f"--> [STEP] Launching batch Playwright scraper for {len(MAR_TV_TARGETS)} channels...")
+    logging.info(f"---> [STEP] Launching batch Playwright scraper for {len(MAR_TV_TARGETS)} channels...")
     scraped_urls = {}
 
     try:
@@ -159,15 +172,14 @@ def fetch_mar_tv_streams():
                 url = request.url
                 request_history.append(f"[{request.method}] {url}")
                 
-                # Intercept m3u8 or media manifests
                 if ".m3u8" in url or "playlist" in url or "master" in url:
                     logging.debug(f"Network intercept detected candidate stream URL: {url}")
                     if current_channel_id != "pirveliarxi" and ("gpb-1tv" in url or "gpb" in url):
-                        logging.warning(f"  └─ Ignored fallback Pirveli Arxi stream for {current_channel_id}")
+                        logging.warning(f"  +-- Ignored fallback Pirveli Arxi stream for {current_channel_id}")
                         return
                     if not captured_stream_url and ".m3u8" in url:
                         captured_stream_url = url
-                        logging.info(f"  ★ Successfully captured stream URL for {current_channel_id}: {url}")
+                        logging.info(f"  [SUCCESS] Captured stream URL for {current_channel_id}: {url}")
 
             context.on("request", handle_global_request)
 
@@ -186,11 +198,9 @@ def fetch_mar_tv_streams():
                     
                     page.wait_for_timeout(2000)
 
-                    # Trigger viewport click to activate players requiring interaction
                     logging.debug(f"[{channel_id}] Performing force mouse click at (640, 360)")
                     page.mouse.click(640, 360)
 
-                    # Traverse parent DOM and iframe contexts to trigger play elements
                     frames = page.frames
                     logging.debug(f"[{channel_id}] Found {len(frames)} frames on target page")
                     for index, frame in enumerate(frames):
@@ -213,13 +223,12 @@ def fetch_mar_tv_streams():
                 if captured_stream_url:
                     scraped_urls[channel_id] = captured_stream_url
                 else:
-                    # Capture debug screenshot for visual verification
                     screenshot_path = os.path.join(LOG_DIR, f"debug_{channel_id}.png")
                     try:
                         page.screenshot(path=screenshot_path)
-                        logging.warning(f"  └─ Saved failure screenshot to: {screenshot_path}")
+                        logging.warning(f"  +-- Saved failure screenshot to: {screenshot_path}")
                     except Exception as ss_err:
-                        logging.error(f"  └─ Failed to capture screenshot: {ss_err}")
+                        logging.error(f"  +-- Failed to capture screenshot: {ss_err}")
 
                     history_snippet = "\n".join(request_history[-25:]) if request_history else "No requests recorded"
                     log_detailed_error(
@@ -241,7 +250,7 @@ def update_my_playlist():
     setanta_block = fetch_setanta_block()
     mar_tv_streams = fetch_mar_tv_streams()
 
-    logging.info("--> [STEP] Updating local M3U file contents...")
+    logging.info("---> [STEP] Updating local M3U file contents...")
     try:
         with open(MY_M3U_FILE, 'r', encoding='utf-8') as f:
             my_content = f.read()
@@ -274,7 +283,7 @@ def update_my_playlist():
         try:
             with open(MY_M3U_FILE, 'w', encoding='utf-8') as f:
                 f.write(my_content)
-            logging.info(f"★ File write successful! Saved changes to {MY_M3U_FILE}.")
+            logging.info(f"[SUCCESS] File write successful! Saved changes to {MY_M3U_FILE}.")
         except Exception as e:
             log_detailed_error("FileIO", f"Failed to write updated content back to '{MY_M3U_FILE}'", exc=e)
     else:
