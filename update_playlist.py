@@ -89,7 +89,27 @@ def extract_m3u8(page, url, channel_name, source_type):
             
             if player.is_visible(timeout=5000):
                 box = player.bounding_box()
-                page.mouse.click(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
+                
+                # Base coordinates
+                center_x = box["x"] + box["width"] / 2
+                center_y = box["y"] + box["height"] / 2
+                lower_y = box["y"] + (box["height"] * 0.80) # Target the bottom 80% mark
+                
+                # 1. Click exactly where the Basti Bubu play button sits in the screenshot
+                page.mouse.click(center_x, lower_y)
+                
+                # 2. Immediately click the exact center as a fallback for other channels
+                page.mouse.click(center_x, center_y)
+                
+                # 3. Aggressive Frame Piercing: Search inside any loaded iframes for common play button CSS classes
+                try:
+                    for iframe in page.frames:
+                        play_btn = iframe.locator('.vjs-big-play-button, .play-icon, [class*="play"]').first
+                        if play_btn.is_visible(timeout=1000):
+                            play_btn.click(force=True)
+                except Exception:
+                    pass
+
             else:
                 logging.warning(f"[{source_type}] {channel_name}: Player not visible on page.")
                 
