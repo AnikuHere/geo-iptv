@@ -46,22 +46,14 @@ https://tv.cdn.xsg.ge/c4635/TVFormula/playlist.m3u8
 
 
 
-#EXTINF:-1 tvg-id="axaliformula" group-title="Georgia (🇬🇪)",Axali Formula
-
-https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/axaliformla/index.m3u8
-
-
-
 #EXTINF:-1 tvg-id="gds" group-title="Georgia (🇬🇪)",GDS TV
 
-https://live1.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/13sd/index.m3u8
-
+https://streaming-hls2.televizia.org/hls/gds.m3u8
 
 
 #EXTINF:-1 tvg-id="silkuniversal" group-title="Georgia (🇬🇪)",SilkUniversalHD
 
-https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/1arxiweb/index.m3u8
-
+https://streaming-hls2.televizia.org/hls/silk.m3u8
 
 
 #EXTINF:-1 tvg-id="setanta3",Setanta Sports 3
@@ -86,8 +78,7 @@ http://nue01-edge01.itdc.ge/euronewsgeorgia/mpegts
 
 #EXTINF:-1 tvg-id="comedy" group-title="Georgia (🇬🇪)",Comedy TV
 
-https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/14rd/index.m3u8
-
+https://streaming-hls4.televizia.org/hls/comedy.m3u8
 
 
 #EXTINF:-1 tvg-id="maestro" group-title="Georgia (🇬🇪)",Maestro
@@ -182,14 +173,12 @@ https://streaming-hls3.televizia.org/hls/kavkasia.m3u8
 
 #EXTINF:-1 tvg-id="rugbytv" group-title="Georgia (🇬🇪)",RugbyTV
 
-https://live4.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/160m/index.m3u8
-
+https://www.televizia.org/no-stream/index.m3u8
 
 
 #EXTINF:-1 tvg-id="postv" tvg-logo="https://yt3.googleusercontent.com/W2Krl3yrq4T0DWDMXhcuk-jFTP5m1wUpcO_b11WNbNBiYY4lw5w8olUCuqJM7q_olPfhFeD1-A=s160-c-k-c0x00ffffff-no-rj" group-title="Georgia (🇬🇪)",POSTV
 
-https://live6.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/postvw/index.m3u8
-
+https://streaming-hls1.televizia.org/hls/postv.m3u8
 
 
 #EXTINF:-1 tvg-id="obieqtivitv" group-title="Georgia (🇬🇪)",Obieqtivi TV
@@ -212,14 +201,12 @@ https://live20.bozztv.com/dvrfl05/gin-adjara/index.m3u8
 
 #EXTINF:-1 tvg-id="adjaratv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/ADJARA_TV_LOGO_2016.png/250px-ADJARA_TV_LOGO_2016.png" group-title="Georgia (🇬🇪)",AdjaraTV
 
-https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/19rd/index.m3u8
-
+https://streaming-hls2.televizia.org/hls/adjara.m3u8
 
 
 #EXTINF:-1 tvg-id="marao" group-title="Georgia (🇬🇪)",Marao
 
-https://live2.mar.tv/1aa9d3807690d5291fd0fe80e2c2e7ad2cd78a7b133b36ee18ae7e0cce3cdd21/12sd/index.m3u8
-
+https://streaming-hls3.televizia.org/hls/marao.m3u8
 
 
 #EXTINF:-1 tvg-id="rionitv" group-title="Georgia (🇬🇪)",Rioni TV (720p) [Not 24/7]
@@ -234,10 +221,9 @@ https://live.palitranews.ge/hls/palitratv/index.m3u8
 
 
 
-#EXTINF:-1 tvg-id="palitratv_alt" group-title="Georgia (🇬🇪)",Palitra News (Alt) [Not 24/7]
+#EXTINF:-1 tvg-id="palitratv_alt" group-title="Georgia (🇬🇪)",Palitra News (Alt) 
 
-https://livestream.palitra.ge/hls/palitratv/index.m3u8
-
+https://streaming-hls1.televizia.org/hls/palitra.m3u8
 
 
 #EXTINF:-1 tvg-id="MtavariArkhi.ge@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mtavari_Arkhi_2019.svg/250px-Mtavari_Arkhi_2019.svg.png" group-title="Georgia (🇬🇪)",Mtavari Arkhi
