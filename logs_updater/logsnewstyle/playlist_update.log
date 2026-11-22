@@ -1,116 +1,116 @@
-2026-11-22 02:53:17,056 [INFO] --- Processing PosTV ---
-2026-11-22 02:53:17,056 [INFO] [PRIMARY] Loading https://tv.mar.tv/postv for PosTV...
-2026-11-22 02:53:17,650 [WARNING] [PRIMARY] PosTV: Player not visible on page.
-2026-11-22 02:53:32,640 [ERROR] [PRIMARY] PosTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:53:32,699 [INFO] [PRIMARY] PosTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_PosTV_primary.png
-2026-11-22 02:53:32,699 [INFO] [FALLBACK] Primary failed. Attempting backup for PosTV...
-2026-11-22 02:53:32,699 [INFO] [BACKUP] Loading https://www.televizia.org/postv/ for PosTV...
-2026-11-22 02:53:34,171 [INFO] [BACKUP] PosTV: Stream captured successfully.
-2026-11-22 02:53:34,171 [INFO] --- Processing AdjaraTV ---
-2026-11-22 02:53:34,171 [INFO] [PRIMARY] Loading https://tv.mar.tv/adjaratv for AdjaraTV...
-2026-11-22 02:53:34,485 [WARNING] [PRIMARY] AdjaraTV: Player not visible on page.
-2026-11-22 02:53:49,398 [ERROR] [PRIMARY] AdjaraTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:53:49,509 [INFO] [PRIMARY] AdjaraTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_AdjaraTV_primary.png
-2026-11-22 02:53:49,509 [INFO] [FALLBACK] Primary failed. Attempting backup for AdjaraTV...
-2026-11-22 02:53:49,509 [INFO] [BACKUP] AdjaraTV: Direct link detected, skipping browser extraction.
-2026-11-22 02:53:49,509 [INFO] --- Processing Axali Formula ---
-2026-11-22 02:53:49,509 [INFO] [PRIMARY] Loading https://tv.mar.tv/formulatv for Axali Formula...
-2026-11-22 02:53:49,768 [WARNING] [PRIMARY] Axali Formula: Player not visible on page.
-2026-11-22 02:54:04,748 [ERROR] [PRIMARY] Axali Formula: Timeout error. Stream failed to initialize.
-2026-11-22 02:54:04,776 [INFO] [PRIMARY] Axali Formula: Saved debug screenshot to logs_updater/logsnewstyle/debug_Axali_Formula_primary.png
-2026-11-22 02:54:04,776 [INFO] [FALLBACK] Primary failed. Attempting backup for Axali Formula...
-2026-11-22 02:54:04,777 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/formulatv for Axali Formula...
-2026-11-22 02:54:05,181 [WARNING] [BACKUP] Axali Formula: Player not visible on page.
-2026-11-22 02:54:20,166 [ERROR] [BACKUP] Axali Formula: Timeout error. Stream failed to initialize.
-2026-11-22 02:54:20,207 [INFO] [BACKUP] Axali Formula: Saved debug screenshot to logs_updater/logsnewstyle/debug_Axali_Formula_backup.png
-2026-11-22 02:54:20,207 [ERROR] [FATAL] Both primary and backup sources failed for Axali Formula.
-2026-11-22 02:54:20,207 [INFO] --- Processing RugbyTV ---
-2026-11-22 02:54:20,207 [INFO] [PRIMARY] Loading https://tv.mar.tv/rugbytv for RugbyTV...
-2026-11-22 02:54:20,510 [WARNING] [PRIMARY] RugbyTV: Player not visible on page.
-2026-11-22 02:54:35,433 [ERROR] [PRIMARY] RugbyTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:54:35,458 [INFO] [PRIMARY] RugbyTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_RugbyTV_primary.png
-2026-11-22 02:54:35,458 [INFO] [FALLBACK] Primary failed. Attempting backup for RugbyTV...
-2026-11-22 02:54:35,458 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/rugbytv for RugbyTV...
-2026-11-22 02:54:35,819 [WARNING] [BACKUP] RugbyTV: Player not visible on page.
-2026-11-22 02:54:50,804 [ERROR] [BACKUP] RugbyTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:54:50,841 [INFO] [BACKUP] RugbyTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_RugbyTV_backup.png
-2026-11-22 02:54:50,841 [ERROR] [FATAL] Both primary and backup sources failed for RugbyTV.
-2026-11-22 02:54:50,841 [INFO] --- Processing ObieqtiviTV ---
-2026-11-22 02:54:50,841 [INFO] [PRIMARY] Loading https://tv.mar.tv/obieqtivitv for ObieqtiviTV...
-2026-11-22 02:54:51,137 [WARNING] [PRIMARY] ObieqtiviTV: Player not visible on page.
-2026-11-22 02:55:06,064 [ERROR] [PRIMARY] ObieqtiviTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:55:06,091 [INFO] [PRIMARY] ObieqtiviTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_ObieqtiviTV_primary.png
-2026-11-22 02:55:06,091 [INFO] [FALLBACK] Primary failed. Attempting backup for ObieqtiviTV...
-2026-11-22 02:55:06,091 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/obieqtivitv for ObieqtiviTV...
-2026-11-22 02:55:06,426 [WARNING] [BACKUP] ObieqtiviTV: Player not visible on page.
-2026-11-22 02:55:21,420 [ERROR] [BACKUP] ObieqtiviTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:55:21,444 [INFO] [BACKUP] ObieqtiviTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_ObieqtiviTV_backup.png
-2026-11-22 02:55:21,444 [ERROR] [FATAL] Both primary and backup sources failed for ObieqtiviTV.
-2026-11-22 02:55:21,444 [INFO] --- Processing Palitranews ---
-2026-11-22 02:55:21,444 [INFO] [PRIMARY] Loading https://tv.mar.tv/palitranewstv for Palitranews...
-2026-11-22 02:55:21,747 [WARNING] [PRIMARY] Palitranews: Player not visible on page.
-2026-11-22 02:55:36,667 [ERROR] [PRIMARY] Palitranews: Timeout error. Stream failed to initialize.
-2026-11-22 02:55:36,690 [INFO] [PRIMARY] Palitranews: Saved debug screenshot to logs_updater/logsnewstyle/debug_Palitranews_primary.png
-2026-11-22 02:55:36,691 [INFO] [FALLBACK] Primary failed. Attempting backup for Palitranews...
-2026-11-22 02:55:36,691 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/palitranewstv for Palitranews...
-2026-11-22 02:55:37,013 [WARNING] [BACKUP] Palitranews: Player not visible on page.
-2026-11-22 02:55:52,009 [ERROR] [BACKUP] Palitranews: Timeout error. Stream failed to initialize.
-2026-11-22 02:55:52,032 [INFO] [BACKUP] Palitranews: Saved debug screenshot to logs_updater/logsnewstyle/debug_Palitranews_backup.png
-2026-11-22 02:55:52,033 [ERROR] [FATAL] Both primary and backup sources failed for Palitranews.
-2026-11-22 02:55:52,033 [INFO] --- Processing GDS ---
-2026-11-22 02:55:52,033 [INFO] [PRIMARY] Loading https://tv.mar.tv/gds for GDS...
-2026-11-22 02:55:52,346 [WARNING] [PRIMARY] GDS: Player not visible on page.
-2026-11-22 02:56:07,268 [ERROR] [PRIMARY] GDS: Timeout error. Stream failed to initialize.
-2026-11-22 02:56:07,290 [INFO] [PRIMARY] GDS: Saved debug screenshot to logs_updater/logsnewstyle/debug_GDS_primary.png
-2026-11-22 02:56:07,290 [INFO] [FALLBACK] Primary failed. Attempting backup for GDS...
-2026-11-22 02:56:07,290 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/gds for GDS...
-2026-11-22 02:56:07,602 [WARNING] [BACKUP] GDS: Player not visible on page.
-2026-11-22 02:56:22,598 [ERROR] [BACKUP] GDS: Timeout error. Stream failed to initialize.
-2026-11-22 02:56:22,621 [INFO] [BACKUP] GDS: Saved debug screenshot to logs_updater/logsnewstyle/debug_GDS_backup.png
-2026-11-22 02:56:22,621 [ERROR] [FATAL] Both primary and backup sources failed for GDS.
-2026-11-22 02:56:22,621 [INFO] --- Processing BBB ---
-2026-11-22 02:56:22,621 [INFO] [PRIMARY] Loading https://tv.mar.tv/bastibubutv for BBB...
-2026-11-22 02:56:22,927 [WARNING] [PRIMARY] BBB: Player not visible on page.
-2026-11-22 02:56:37,872 [ERROR] [PRIMARY] BBB: Timeout error. Stream failed to initialize.
-2026-11-22 02:56:37,905 [INFO] [PRIMARY] BBB: Saved debug screenshot to logs_updater/logsnewstyle/debug_BBB_primary.png
-2026-11-22 02:56:37,905 [INFO] [FALLBACK] Primary failed. Attempting backup for BBB...
-2026-11-22 02:56:37,905 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/bastibubutv for BBB...
-2026-11-22 02:56:38,441 [WARNING] [BACKUP] BBB: Player not visible on page.
-2026-11-22 02:56:53,439 [ERROR] [BACKUP] BBB: Timeout error. Stream failed to initialize.
-2026-11-22 02:56:53,461 [INFO] [BACKUP] BBB: Saved debug screenshot to logs_updater/logsnewstyle/debug_BBB_backup.png
-2026-11-22 02:56:53,461 [ERROR] [FATAL] Both primary and backup sources failed for BBB.
-2026-11-22 02:56:53,461 [INFO] --- Processing Enkibenki ---
-2026-11-22 02:56:53,461 [INFO] [PRIMARY] Loading https://tv.mar.tv/enkibenkitv for Enkibenki...
-2026-11-22 02:56:53,770 [WARNING] [PRIMARY] Enkibenki: Player not visible on page.
-2026-11-22 02:57:08,689 [ERROR] [PRIMARY] Enkibenki: Timeout error. Stream failed to initialize.
-2026-11-22 02:57:08,713 [INFO] [PRIMARY] Enkibenki: Saved debug screenshot to logs_updater/logsnewstyle/debug_Enkibenki_primary.png
-2026-11-22 02:57:08,713 [INFO] [FALLBACK] Primary failed. Attempting backup for Enkibenki...
-2026-11-22 02:57:08,713 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/enkibenkitv for Enkibenki...
-2026-11-22 02:57:09,022 [WARNING] [BACKUP] Enkibenki: Player not visible on page.
-2026-11-22 02:57:24,012 [ERROR] [BACKUP] Enkibenki: Timeout error. Stream failed to initialize.
-2026-11-22 02:57:24,035 [INFO] [BACKUP] Enkibenki: Saved debug screenshot to logs_updater/logsnewstyle/debug_Enkibenki_backup.png
-2026-11-22 02:57:24,035 [ERROR] [FATAL] Both primary and backup sources failed for Enkibenki.
-2026-11-22 02:57:24,035 [INFO] --- Processing KvemoKartli TV ---
-2026-11-22 02:57:24,035 [INFO] [PRIMARY] Loading https://tv.mar.tv/kvemokartlitv for KvemoKartli TV...
-2026-11-22 02:57:24,327 [WARNING] [PRIMARY] KvemoKartli TV: Player not visible on page.
-2026-11-22 02:57:39,253 [ERROR] [PRIMARY] KvemoKartli TV: Timeout error. Stream failed to initialize.
-2026-11-22 02:57:39,286 [INFO] [PRIMARY] KvemoKartli TV: Saved debug screenshot to logs_updater/logsnewstyle/debug_KvemoKartli_TV_primary.png
-2026-11-22 02:57:39,286 [INFO] [FALLBACK] Primary failed. Attempting backup for KvemoKartli TV...
-2026-11-22 02:57:39,286 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/kvemokartlitv for KvemoKartli TV...
-2026-11-22 02:57:39,605 [WARNING] [BACKUP] KvemoKartli TV: Player not visible on page.
-2026-11-22 02:57:54,599 [ERROR] [BACKUP] KvemoKartli TV: Timeout error. Stream failed to initialize.
-2026-11-22 02:57:54,621 [INFO] [BACKUP] KvemoKartli TV: Saved debug screenshot to logs_updater/logsnewstyle/debug_KvemoKartli_TV_backup.png
-2026-11-22 02:57:54,621 [ERROR] [FATAL] Both primary and backup sources failed for KvemoKartli TV.
-2026-11-22 02:57:54,621 [INFO] --- Processing MaraoTV ---
-2026-11-22 02:57:54,621 [INFO] [PRIMARY] Loading https://tv.mar.tv/maraotv for MaraoTV...
-2026-11-22 02:57:54,913 [WARNING] [PRIMARY] MaraoTV: Player not visible on page.
-2026-11-22 02:58:09,835 [ERROR] [PRIMARY] MaraoTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:58:09,868 [INFO] [PRIMARY] MaraoTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_MaraoTV_primary.png
-2026-11-22 02:58:09,868 [INFO] [FALLBACK] Primary failed. Attempting backup for MaraoTV...
-2026-11-22 02:58:09,868 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/maraotv for MaraoTV...
-2026-11-22 02:58:10,189 [WARNING] [BACKUP] MaraoTV: Player not visible on page.
-2026-11-22 02:58:25,183 [ERROR] [BACKUP] MaraoTV: Timeout error. Stream failed to initialize.
-2026-11-22 02:58:25,206 [INFO] [BACKUP] MaraoTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_MaraoTV_backup.png
-2026-11-22 02:58:25,206 [ERROR] [FATAL] Both primary and backup sources failed for MaraoTV.
-2026-11-22 02:58:25,235 [INFO] Writing 2 working channels to playlist.m3u...
-2026-11-22 02:58:25,236 [INFO] Playlist update complete.
+2026-11-22 10:52:45,204 [INFO] --- Processing PosTV ---
+2026-11-22 10:52:45,205 [INFO] [PRIMARY] Loading https://tv.mar.tv/postv for PosTV...
+2026-11-22 10:52:45,811 [WARNING] [PRIMARY] PosTV: Player not visible on page.
+2026-11-22 10:53:00,787 [ERROR] [PRIMARY] PosTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:53:00,887 [INFO] [PRIMARY] PosTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_PosTV_primary.png
+2026-11-22 10:53:00,888 [INFO] [FALLBACK] Primary failed. Attempting backup for PosTV...
+2026-11-22 10:53:00,888 [INFO] [BACKUP] Loading https://www.televizia.org/postv/ for PosTV...
+2026-11-22 10:53:02,647 [INFO] [BACKUP] PosTV: Stream captured successfully.
+2026-11-22 10:53:02,647 [INFO] --- Processing AdjaraTV ---
+2026-11-22 10:53:02,647 [INFO] [PRIMARY] Loading https://tv.mar.tv/adjaratv for AdjaraTV...
+2026-11-22 10:53:02,960 [WARNING] [PRIMARY] AdjaraTV: Player not visible on page.
+2026-11-22 10:53:17,878 [ERROR] [PRIMARY] AdjaraTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:53:17,902 [INFO] [PRIMARY] AdjaraTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_AdjaraTV_primary.png
+2026-11-22 10:53:17,902 [INFO] [FALLBACK] Primary failed. Attempting backup for AdjaraTV...
+2026-11-22 10:53:17,902 [INFO] [BACKUP] AdjaraTV: Direct link detected, skipping browser extraction.
+2026-11-22 10:53:17,902 [INFO] --- Processing Axali Formula ---
+2026-11-22 10:53:17,902 [INFO] [PRIMARY] Loading https://tv.mar.tv/formulatv for Axali Formula...
+2026-11-22 10:53:18,156 [WARNING] [PRIMARY] Axali Formula: Player not visible on page.
+2026-11-22 10:53:33,140 [ERROR] [PRIMARY] Axali Formula: Timeout error. Stream failed to initialize.
+2026-11-22 10:53:33,168 [INFO] [PRIMARY] Axali Formula: Saved debug screenshot to logs_updater/logsnewstyle/debug_Axali_Formula_primary.png
+2026-11-22 10:53:33,168 [INFO] [FALLBACK] Primary failed. Attempting backup for Axali Formula...
+2026-11-22 10:53:33,168 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/formulatv for Axali Formula...
+2026-11-22 10:53:33,590 [WARNING] [BACKUP] Axali Formula: Player not visible on page.
+2026-11-22 10:53:48,586 [ERROR] [BACKUP] Axali Formula: Timeout error. Stream failed to initialize.
+2026-11-22 10:53:48,610 [INFO] [BACKUP] Axali Formula: Saved debug screenshot to logs_updater/logsnewstyle/debug_Axali_Formula_backup.png
+2026-11-22 10:53:48,611 [ERROR] [FATAL] Both primary and backup sources failed for Axali Formula.
+2026-11-22 10:53:48,611 [INFO] --- Processing RugbyTV ---
+2026-11-22 10:53:48,611 [INFO] [PRIMARY] Loading https://tv.mar.tv/rugbytv for RugbyTV...
+2026-11-22 10:53:48,917 [WARNING] [PRIMARY] RugbyTV: Player not visible on page.
+2026-11-22 10:54:03,825 [ERROR] [PRIMARY] RugbyTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:54:03,849 [INFO] [PRIMARY] RugbyTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_RugbyTV_primary.png
+2026-11-22 10:54:03,850 [INFO] [FALLBACK] Primary failed. Attempting backup for RugbyTV...
+2026-11-22 10:54:03,850 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/rugbytv for RugbyTV...
+2026-11-22 10:54:04,197 [WARNING] [BACKUP] RugbyTV: Player not visible on page.
+2026-11-22 10:54:19,191 [ERROR] [BACKUP] RugbyTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:54:19,215 [INFO] [BACKUP] RugbyTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_RugbyTV_backup.png
+2026-11-22 10:54:19,215 [ERROR] [FATAL] Both primary and backup sources failed for RugbyTV.
+2026-11-22 10:54:19,215 [INFO] --- Processing ObieqtiviTV ---
+2026-11-22 10:54:19,216 [INFO] [PRIMARY] Loading https://tv.mar.tv/obieqtivitv for ObieqtiviTV...
+2026-11-22 10:54:19,518 [WARNING] [PRIMARY] ObieqtiviTV: Player not visible on page.
+2026-11-22 10:54:34,436 [ERROR] [PRIMARY] ObieqtiviTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:54:34,466 [INFO] [PRIMARY] ObieqtiviTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_ObieqtiviTV_primary.png
+2026-11-22 10:54:34,466 [INFO] [FALLBACK] Primary failed. Attempting backup for ObieqtiviTV...
+2026-11-22 10:54:34,466 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/obieqtivitv for ObieqtiviTV...
+2026-11-22 10:54:35,286 [WARNING] [BACKUP] ObieqtiviTV: Player not visible on page.
+2026-11-22 10:54:50,280 [ERROR] [BACKUP] ObieqtiviTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:54:50,304 [INFO] [BACKUP] ObieqtiviTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_ObieqtiviTV_backup.png
+2026-11-22 10:54:50,304 [ERROR] [FATAL] Both primary and backup sources failed for ObieqtiviTV.
+2026-11-22 10:54:50,304 [INFO] --- Processing Palitranews ---
+2026-11-22 10:54:50,304 [INFO] [PRIMARY] Loading https://tv.mar.tv/palitranewstv for Palitranews...
+2026-11-22 10:54:50,616 [WARNING] [PRIMARY] Palitranews: Player not visible on page.
+2026-11-22 10:55:05,536 [ERROR] [PRIMARY] Palitranews: Timeout error. Stream failed to initialize.
+2026-11-22 10:55:05,564 [INFO] [PRIMARY] Palitranews: Saved debug screenshot to logs_updater/logsnewstyle/debug_Palitranews_primary.png
+2026-11-22 10:55:05,564 [INFO] [FALLBACK] Primary failed. Attempting backup for Palitranews...
+2026-11-22 10:55:05,564 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/palitranewstv for Palitranews...
+2026-11-22 10:55:05,927 [WARNING] [BACKUP] Palitranews: Player not visible on page.
+2026-11-22 10:55:20,923 [ERROR] [BACKUP] Palitranews: Timeout error. Stream failed to initialize.
+2026-11-22 10:55:20,946 [INFO] [BACKUP] Palitranews: Saved debug screenshot to logs_updater/logsnewstyle/debug_Palitranews_backup.png
+2026-11-22 10:55:20,946 [ERROR] [FATAL] Both primary and backup sources failed for Palitranews.
+2026-11-22 10:55:20,946 [INFO] --- Processing GDS ---
+2026-11-22 10:55:20,946 [INFO] [PRIMARY] Loading https://tv.mar.tv/gds for GDS...
+2026-11-22 10:55:21,250 [WARNING] [PRIMARY] GDS: Player not visible on page.
+2026-11-22 10:55:36,169 [ERROR] [PRIMARY] GDS: Timeout error. Stream failed to initialize.
+2026-11-22 10:55:36,196 [INFO] [PRIMARY] GDS: Saved debug screenshot to logs_updater/logsnewstyle/debug_GDS_primary.png
+2026-11-22 10:55:36,196 [INFO] [FALLBACK] Primary failed. Attempting backup for GDS...
+2026-11-22 10:55:36,196 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/gds for GDS...
+2026-11-22 10:55:36,620 [WARNING] [BACKUP] GDS: Player not visible on page.
+2026-11-22 10:55:51,613 [ERROR] [BACKUP] GDS: Timeout error. Stream failed to initialize.
+2026-11-22 10:55:51,637 [INFO] [BACKUP] GDS: Saved debug screenshot to logs_updater/logsnewstyle/debug_GDS_backup.png
+2026-11-22 10:55:51,637 [ERROR] [FATAL] Both primary and backup sources failed for GDS.
+2026-11-22 10:55:51,637 [INFO] --- Processing BBB ---
+2026-11-22 10:55:51,637 [INFO] [PRIMARY] Loading https://tv.mar.tv/bastibubutv for BBB...
+2026-11-22 10:55:51,949 [WARNING] [PRIMARY] BBB: Player not visible on page.
+2026-11-22 10:56:06,865 [ERROR] [PRIMARY] BBB: Timeout error. Stream failed to initialize.
+2026-11-22 10:56:06,889 [INFO] [PRIMARY] BBB: Saved debug screenshot to logs_updater/logsnewstyle/debug_BBB_primary.png
+2026-11-22 10:56:06,890 [INFO] [FALLBACK] Primary failed. Attempting backup for BBB...
+2026-11-22 10:56:06,890 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/bastibubutv for BBB...
+2026-11-22 10:56:07,239 [WARNING] [BACKUP] BBB: Player not visible on page.
+2026-11-22 10:56:22,232 [ERROR] [BACKUP] BBB: Timeout error. Stream failed to initialize.
+2026-11-22 10:56:22,255 [INFO] [BACKUP] BBB: Saved debug screenshot to logs_updater/logsnewstyle/debug_BBB_backup.png
+2026-11-22 10:56:22,255 [ERROR] [FATAL] Both primary and backup sources failed for BBB.
+2026-11-22 10:56:22,255 [INFO] --- Processing Enkibenki ---
+2026-11-22 10:56:22,255 [INFO] [PRIMARY] Loading https://tv.mar.tv/enkibenkitv for Enkibenki...
+2026-11-22 10:56:22,564 [WARNING] [PRIMARY] Enkibenki: Player not visible on page.
+2026-11-22 10:56:37,482 [ERROR] [PRIMARY] Enkibenki: Timeout error. Stream failed to initialize.
+2026-11-22 10:56:37,510 [INFO] [PRIMARY] Enkibenki: Saved debug screenshot to logs_updater/logsnewstyle/debug_Enkibenki_primary.png
+2026-11-22 10:56:37,510 [INFO] [FALLBACK] Primary failed. Attempting backup for Enkibenki...
+2026-11-22 10:56:37,510 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/enkibenkitv for Enkibenki...
+2026-11-22 10:56:37,883 [WARNING] [BACKUP] Enkibenki: Player not visible on page.
+2026-11-22 10:56:52,875 [ERROR] [BACKUP] Enkibenki: Timeout error. Stream failed to initialize.
+2026-11-22 10:56:52,910 [INFO] [BACKUP] Enkibenki: Saved debug screenshot to logs_updater/logsnewstyle/debug_Enkibenki_backup.png
+2026-11-22 10:56:52,910 [ERROR] [FATAL] Both primary and backup sources failed for Enkibenki.
+2026-11-22 10:56:52,910 [INFO] --- Processing KvemoKartli TV ---
+2026-11-22 10:56:52,910 [INFO] [PRIMARY] Loading https://tv.mar.tv/kvemokartlitv for KvemoKartli TV...
+2026-11-22 10:56:53,189 [WARNING] [PRIMARY] KvemoKartli TV: Player not visible on page.
+2026-11-22 10:57:08,134 [ERROR] [PRIMARY] KvemoKartli TV: Timeout error. Stream failed to initialize.
+2026-11-22 10:57:08,160 [INFO] [PRIMARY] KvemoKartli TV: Saved debug screenshot to logs_updater/logsnewstyle/debug_KvemoKartli_TV_primary.png
+2026-11-22 10:57:08,160 [INFO] [FALLBACK] Primary failed. Attempting backup for KvemoKartli TV...
+2026-11-22 10:57:08,160 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/kvemokartlitv for KvemoKartli TV...
+2026-11-22 10:57:08,506 [WARNING] [BACKUP] KvemoKartli TV: Player not visible on page.
+2026-11-22 10:57:23,497 [ERROR] [BACKUP] KvemoKartli TV: Timeout error. Stream failed to initialize.
+2026-11-22 10:57:23,525 [INFO] [BACKUP] KvemoKartli TV: Saved debug screenshot to logs_updater/logsnewstyle/debug_KvemoKartli_TV_backup.png
+2026-11-22 10:57:23,525 [ERROR] [FATAL] Both primary and backup sources failed for KvemoKartli TV.
+2026-11-22 10:57:23,525 [INFO] --- Processing MaraoTV ---
+2026-11-22 10:57:23,525 [INFO] [PRIMARY] Loading https://tv.mar.tv/maraotv for MaraoTV...
+2026-11-22 10:57:23,800 [WARNING] [PRIMARY] MaraoTV: Player not visible on page.
+2026-11-22 10:57:38,749 [ERROR] [PRIMARY] MaraoTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:57:38,774 [INFO] [PRIMARY] MaraoTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_MaraoTV_primary.png
+2026-11-22 10:57:38,775 [INFO] [FALLBACK] Primary failed. Attempting backup for MaraoTV...
+2026-11-22 10:57:38,775 [INFO] [BACKUP] Loading https://www.arxebi.live/ge/maraotv for MaraoTV...
+2026-11-22 10:57:39,150 [WARNING] [BACKUP] MaraoTV: Player not visible on page.
+2026-11-22 10:57:54,142 [ERROR] [BACKUP] MaraoTV: Timeout error. Stream failed to initialize.
+2026-11-22 10:57:54,165 [INFO] [BACKUP] MaraoTV: Saved debug screenshot to logs_updater/logsnewstyle/debug_MaraoTV_backup.png
+2026-11-22 10:57:54,166 [ERROR] [FATAL] Both primary and backup sources failed for MaraoTV.
+2026-11-22 10:57:54,198 [INFO] Writing 2 working channels to playlist.m3u...
+2026-11-22 10:57:54,199 [INFO] Playlist update complete.
